@@ -50,3 +50,32 @@ function changeInfo(){
         }
     });
 }
+
+
+
+function showCreateBlogModal(){
+    $('#blogModal').modal('show');
+
+}
+
+function submitBlog(){
+    var blogTitle = $('#blogTitle').val();
+    var blogContent = $('#blogContent').val();
+
+    $.ajax({
+        url:"http://localhost:8080/MyBlog/submitBlog/"+userId+"/"+blogTitle+"/"+blogContent,
+        dataType:'jsonp',
+        processData: true,
+        typece:'put',
+        sucss:function(){
+        },
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            var result = eval("("+XMLHttpRequest.responseText+")");
+            if(result.status == "success"){
+                layer.msg("submit blog success");
+            }else{
+                layer.msg("submit blog failure\nunkown reason");
+            }
+        }
+    });
+}

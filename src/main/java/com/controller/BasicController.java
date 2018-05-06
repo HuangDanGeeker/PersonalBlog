@@ -95,6 +95,7 @@ public class BasicController {
         result.put("status", "failure");
         return result;
     }
+
     @RequestMapping("/changeUserInfo/{userId}/{name}/{email}/{phone}/{qqNum}/{intro}")
     @ResponseBody
     public Map changeUserInfo(@PathVariable("userId") String userId, @PathVariable("name") String name, @PathVariable("email") String email, @PathVariable("phone") String phone,
@@ -108,6 +109,24 @@ public class BasicController {
         if(qqNum != "") sql += ",qqNum='"+qqNum+"'";
         if(introduction != "") sql += ",introduction='"+introduction+"'";
         sql += " where id='"+userId+"';";
+        try {
+            Statement statement = conn.createStatement();
+            statement.executeUpdate(sql);
+            result.put("status", "success");
+            return result;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        result.put("status", "failure");
+        return result;
+    }
+
+    @RequestMapping("/submitBlog/{userId}/{blogTitle}/{blogContent}")
+    @ResponseBody
+    public Map changeUserInfo(@PathVariable("userId") String userId, @PathVariable("blogTitle") String blogTitle, @PathVariable("blogContent") String blogContent){
+
+        Map<String, Object> result = new HashMap<String, Object>(5);
+        String sql = "insert into blog_"+userId+" values('"+blogTitle+"', '"+blogContent+"', CURRENT_TIME());";
         try {
             Statement statement = conn.createStatement();
             statement.executeUpdate(sql);
