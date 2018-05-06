@@ -60,21 +60,21 @@
 
 						</div>
 						<div class="form-bottom">
-							<form role="form" action="" method="post" class="login-form">
+							<form role="form">
 								<div class="form-group">
-									<label class="sr-only" for="form-username">telphone</label> <input
-										type="text" name="telnumber" placeholder="电话号码"
-										class="form-username form-control" id="form-username">
+									<label class="sr-only" for="userId">用户账号</label>
+									<input
+										type="text" placeholder="账号"
+										class="form-username form-control" id="userId">
 								</div>
 								<div class="form-group">
-									<label class="sr-only" for="form-password">验证码</label> <input
-										type="yzm" name="yzm" placeholder="请输入验证码" class=""
-										id="form-password">
-									<button id="hmac"
-										style="width:200px;height:35px;line-height: 20px;"
-										type="button">发送验证码</button>
+									<label class="sr-only" for="userPw">密 码</label>
+									<input
+										type="text" placeholder="密码"
+										class="form-username form-control" id="userPw">
 								</div>
-								<button type="submit" class="btn">确认</button>
+
+								<button type="button" class="btn" onclick="checkLogin()">确认</button>
 							</form>
 						</div>
 					</div>
@@ -87,71 +87,39 @@
 
 
 	<!-- Javascript -->
-	<script src="login_assets/js/jquery-1.11.1.min.js"></script>
-	<script src="login_assets/bootstrap/js/bootstrap.min.js"></script>
-	<script src="login_assets/js/jquery.backstretch.min.js"></script>
-	<script src="login_assets/js/scripts.js"></script>
-	<script src="login_assets/js/layer-v3.1.1/layer-v3.1.1/layer/layer.js"></script>
+	<script src="../styles/login_assets/js/jquery-1.11.1.min.js"></script>
+	<script src="../styles/login_assets/bootstrap/js/bootstrap.min.js"></script>
+	<script src="../styles/login_assets/js/jquery.backstretch.min.js"></script>
+	<script src="../styles/login_assets/js/scripts.js"></script>
+	<script src="../styles/login_assets/js/layer-v3.1.1/layer-v3.1.1/layer/layer.js"></script>
 
 	<!--[if lt IE 10]>
             <script src="login_assets/js/placeholder.js"></script>
         <![endif]-->
 
 	<script type="text/javascript">
-		$('#hmac')
-				.on(
-						'click',
-						function() {
-							if (!/^(13[0-9]|15[012356789]|17[0-9]|18[0-9]|14[57])[0-9]{8}|(170[059])[0-9]{6}$/i
-									.test($('#form-username').val())) {
-								layer.msg("请输入正确的手机号");
-								return;
-							}
-							$	.ajax({
-										type : "get",//使用post方法访问后台    
-										dataType : "json",//返回json格式的数据    
-										url : "yzm.jsp",//要访问的后台地址    
-										contentType : "application/json;charset=utf-8",
-										data : {
-											username : $('#form-username').val()
-										},//要发送的数据    
-										success : function(data) {
-											alert("sucse");
-										},
-										error : function(XMLResponse) {
-											alert(XMLResponse.responseText)
-										}
-									});
-							var codeflag = 60;
-							var phoneflag = 1;
-							if (phoneflag == 1 && codeflag == 60) {
-								var timeflag = setInterval(
-										function() {
-											codeflag--;
-											if (codeflag > 0) {
-												$('#hmac')	.html('重新发送'	+ codeflag	+ 's');
-												$('#hmac')
-														.css(
-																{
-																	'color' : '#99897A',
-																	'border' : '1px solid #99897A'
-																});
-												$('#hmac').attr('disabled',
-														'disabled');
-											} else {
-												codeflag = 60;
-												$('#hmac').html('获取验证码');
-												$('#hmac').css({
-													'color' : '#68371D'
-												});
-												$('#hmac').removeAttr(
-														'disabled');
-												clearInterval(timeflag);
-											}
-										}, 1000);
+		function checkLogin(){
+			var userId = $('#userId').val();
+			var userPw = $('#userPw').val();
 
-							}
-						})
+            $.ajax({
+                url:"http://localhost:8080/MyBlog/login/"+userId+"/"+userPw,
+                dataType:'jsonp',
+                processData: true,
+                typece:'put',
+                sucss:function(){
+                },
+                error:function(XMLHttpRequest, textStatus, errorThrown) {
+                    var registResult = eval("("+XMLHttpRequest.responseText+")");
+                    if(registResult.loginStatus == "success"){
+                        //redirect
+						window.location.href="http://localhost:8080/MyBlog/profile";
+                    }else{
+                        layer.msg("error in your id or password");
+                    }
+                }});
+
+        }
 	</script>
 </body>
 
