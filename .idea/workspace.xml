@@ -2,20 +2,9 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77fbe3c-b754-48f4-b0ff-ccd8bc211513" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.js" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/classes/com/controller/BasicController.class" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/classes/com/controller/BasicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/controller/BasicController.class" afterPath="$PROJECT_DIR$/target/classes/com/controller/BasicController.class" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/assets/js/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/assets/js/app.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/scripts/assets/js/app.js" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/scripts/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/admin/assets/js/app.js" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/admin/assets/js/app.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/admin/login.html" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/admin/login.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/admin/profile.html" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/admin/profile.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -38,29 +27,21 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BasicController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasicController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="522">
-              <caret line="92" column="19" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
+            <state relative-caret-position="162">
+              <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
               <folding>
                 <element signature="imports" expanded="true" />
                 <element signature="e#2296#2312#0" expanded="true" />
-                <marker date="1525610351964" expanded="true" signature="1572:1607" ph="select passw... user" />
-                <marker date="1525610351964" expanded="true" signature="1572:1608" ph="select passw... user" />
-                <marker date="1525610351964" expanded="true" signature="1572:1619" ph="select passw... user" />
-                <marker date="1525610351964" expanded="true" signature="2447:2487" ph="select * fro... user" />
+                <element signature="e#3583#3599#0" expanded="true" />
+                <marker date="1525612562622" expanded="true" signature="1572:1607" ph="select passw... user" />
+                <marker date="1525612562622" expanded="true" signature="1572:1608" ph="select passw... user" />
+                <marker date="1525612562622" expanded="true" signature="1572:1619" ph="select passw... user" />
+                <marker date="1525612562622" expanded="true" signature="2447:2487" ph="select * fro... user" />
+                <marker date="1525612562622" expanded="true" signature="3626:3641" ph="update user " />
               </folding>
-            </state>
-          </provider>
-        </entry>
-      </file>
-      <file leaf-file-name="login.html" pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.html">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="112">
-              <caret line="90" column="49" lean-forward="true" selection-start-line="90" selection-start-column="49" selection-end-line="90" selection-end-column="49" />
-              <folding />
             </state>
           </provider>
         </entry>
@@ -68,18 +49,18 @@
       <file leaf-file-name="profile.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="528">
-              <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+            <state relative-caret-position="266">
+              <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
               <folding />
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="profile.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="396">
-              <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+            <state relative-caret-position="330">
+              <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
               <folding />
             </state>
           </provider>
@@ -106,8 +87,10 @@
       <find>管理员</find>
       <find>个人资料</find>
       <find>你的</find>
-      <find>queryUserInfo</find>
       <find>layer</find>
+      <find>pass</find>
+      <find>保存修改</find>
+      <find>queryUserInfo</find>
     </findStrings>
   </component>
   <component name="Git.Settings">
@@ -138,9 +121,9 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/assets/js/app.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/assets/js/app.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.js" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
       </list>
     </option>
   </component>
@@ -989,12 +972,12 @@
       <option name="presentableId" value="Default" />
       <updated>1524647578798</updated>
       <workItem from="1524647584805" duration="4976000" />
-      <workItem from="1525592933102" duration="15625000" />
+      <workItem from="1525592933102" duration="17320000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="20601000" />
+    <option name="totallyTimeSpent" value="22296000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="0" />
@@ -1037,7 +1020,7 @@
   </component>
   <component name="XDebuggerManager">
     <breakpoint-manager>
-      <option name="time" value="4" />
+      <option name="time" value="8" />
     </breakpoint-manager>
     <watches-manager />
   </component>
@@ -1049,10 +1032,12 @@
           <folding>
             <element signature="imports" expanded="true" />
             <element signature="e#2296#2312#0" expanded="true" />
-            <marker date="1525610351964" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525610351964" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525610351964" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525610351964" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <element signature="e#3583#3599#0" expanded="true" />
+            <marker date="1525612562622" expanded="true" signature="1572:1607" ph="select passw... user" />
+            <marker date="1525612562622" expanded="true" signature="1572:1608" ph="select passw... user" />
+            <marker date="1525612562622" expanded="true" signature="1572:1619" ph="select passw... user" />
+            <marker date="1525612562622" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <marker date="1525612562622" expanded="true" signature="3626:3641" ph="update user " />
           </folding>
         </state>
       </provider>
@@ -1217,14 +1202,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="212">
-          <caret line="220" column="0" lean-forward="false" selection-start-line="220" selection-start-column="0" selection-end-line="220" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/assets/js/app.js">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
@@ -1269,21 +1246,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="522">
-          <caret line="92" column="19" lean-forward="false" selection-start-line="92" selection-start-column="19" selection-end-line="92" selection-end-column="19" />
-          <folding>
-            <element signature="imports" expanded="true" />
-            <element signature="e#2296#2312#0" expanded="true" />
-            <marker date="1525610351964" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525610351964" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525610351964" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525610351964" expanded="true" signature="2447:2487" ph="select * fro... user" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="112">
@@ -1294,17 +1256,42 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="528">
-          <caret line="24" column="0" lean-forward="false" selection-start-line="24" selection-start-column="0" selection-end-line="24" selection-end-column="0" />
+        <state relative-caret-position="266">
+          <caret line="138" column="12" lean-forward="true" selection-start-line="138" selection-start-column="12" selection-end-line="138" selection-end-column="12" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="396">
-          <caret line="18" column="18" lean-forward="true" selection-start-line="18" selection-start-column="18" selection-end-line="18" selection-end-column="18" />
+        <state relative-caret-position="330">
+          <caret line="35" column="35" lean-forward="true" selection-start-line="35" selection-start-column="35" selection-end-line="35" selection-end-column="35" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="234">
+          <caret line="221" column="9" lean-forward="true" selection-start-line="221" selection-start-column="9" selection-end-line="221" selection-end-column="9" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="162">
+          <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
+          <folding>
+            <element signature="imports" expanded="true" />
+            <element signature="e#2296#2312#0" expanded="true" />
+            <element signature="e#3583#3599#0" expanded="true" />
+            <marker date="1525612562622" expanded="true" signature="1572:1607" ph="select passw... user" />
+            <marker date="1525612562622" expanded="true" signature="1572:1608" ph="select passw... user" />
+            <marker date="1525612562622" expanded="true" signature="1572:1619" ph="select passw... user" />
+            <marker date="1525612562622" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <marker date="1525612562622" expanded="true" signature="3626:3641" ph="update user " />
+          </folding>
         </state>
       </provider>
     </entry>

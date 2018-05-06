@@ -1,7 +1,8 @@
+
+var userId;
 window.onload = function() {
     var location = new String(window.location);
-    var userId = new String(location).substr(new String(location).lastIndexOf('/')+1);
-    layer.msg("sss");
+    userId = new String(location).substr(new String(location).lastIndexOf('/')+1);
     $.ajax({
         url:"http://localhost:8080/MyBlog/queryUserInfo/"+"123",
         dataType:'jsonp',
@@ -12,21 +13,13 @@ window.onload = function() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
-
-                console.log(result);
-                console.log(result.email);
-                console.log(result.qqNum);
-                console.log(result.id);
-                console.log(result.introduction);
-                console.log(result.name);
-                console.log(result.phone);
                 $('#user-name').val(result.name);
                 $('#user-email').val(result.email);
                 $('#user-phone').val(result.phone);
                 $('#user-QQ').val(result.qqNum);
                 $('#user-intro').val(result.introduction);
             }else{
-
+                layer.msg("error in quer user info");
             }
         }
     });
@@ -34,13 +27,13 @@ window.onload = function() {
 
 function changeInfo(){
     var name = $('#user-name').val();
-    var email = $('#user-email').val(result.email);
-    var phone = $('#user-phone').val(result.phone);
-    var qqNum = $('#user-QQ').val(result.qqNum);
-    var introduction = $('#user-intro').val(result.introduction);
+    var email = $('#user-email').val();
+    var phone = $('#user-phone').val();
+    var qqNum = $('#user-QQ').val();
+    var introduction = $('#user-intro').val();
 
     $.ajax({
-        url:"http://localhost:8080/MyBlog/queryUserInfo/"+"123",
+        url:"http://localhost:8080/MyBlog/changeUserInfo/"+userId+"/"+name+"/"+email+"/"+phone+"/"+qqNum+"/"+introduction,
         dataType:'jsonp',
         processData: true,
         typece:'put',
@@ -49,10 +42,9 @@ function changeInfo(){
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
-
-
+                layer.msg("chang Info success");
             }else{
-
+                layer.msg("chang Info failure\nunkown reason");
             }
         }
     });
