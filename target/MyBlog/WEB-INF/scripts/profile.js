@@ -18,6 +18,7 @@ window.onload = function() {
                 $('#user-phone').val(result.phone);
                 $('#user-QQ').val(result.qqNum);
                 $('#user-intro').val(result.introduction);
+                $('#userName').text("    "+result.id + " / " +result.name)
             }else{
                 layer.msg("error in quer user info");
             }
