@@ -49,9 +49,9 @@ public class BasicController {
         Map result = new HashMap<String, Object>(5);
         try {
             Statement statement = conn.createStatement();
-            ResultSet resultSet = statement.executeQuery("select password from user where id='"+userId+"';'");
+            ResultSet resultSet = statement.executeQuery("select password from user where id='"+userId+"';");
             if( resultSet.next() ){
-                if(resultSet.getString(0).equals(userPw)){
+                if(resultSet.getString(1).equals(userPw)){
                     result.put("loginStatus", "success");
                     return result;
                 }
@@ -64,8 +64,38 @@ public class BasicController {
         return result;
     }
 
-    @RequestMapping("/blog/profile")
+    @RequestMapping("/profile/{userd}")
     public String testProfile(){
         return "/admin/profile";
     }
+
+
+    @RequestMapping("/queryUserInfo/{userId}")
+    @ResponseBody
+    public Map queryUserInfo(@PathVariable("userId") String userId){
+
+        Map<String, Object> result = new HashMap<String, Object>(5);
+        try {
+            Statement statement = conn.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from user where id='"+userId+"';");
+            if( resultSet.next()){
+                result.put("status", "success");
+                result.put("id", resultSet.getString(1));
+                result.put("email", resultSet.getString(2));
+                result.put("phone", resultSet.getString(3));
+                result.put("qqNum", resultSet.getString(4));
+                result.put("introduction", resultSet.getString(5));
+                result.put("name", resultSet.getString(6));
+                return result;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        result.put("status", "failure");
+        return result;
+    }
+
+
+
 }

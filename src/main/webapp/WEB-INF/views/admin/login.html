@@ -113,7 +113,7 @@
                     var registResult = eval("("+XMLHttpRequest.responseText+")");
                     if(registResult.loginStatus == "success"){
                         //redirect
-						window.location.href="http://localhost:8080/MyBlog/profile";
+						window.location.href="../profile/"+userId;
                     }else{
                         layer.msg("error in your id or password");
                     }
