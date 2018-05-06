@@ -24,6 +24,7 @@
 
     <mvc:annotation-driven />
     <mvc:default-servlet-handler />
+
     <mvc:resources mapping="/styles/**" location="/WEB-INF/styles/"/>
     <mvc:resources mapping="/images/**" location="/WEB-INF/images/"/>
     <mvc:resources mapping="/scripts/**" location="/WEB-INF/scripts/"/>
