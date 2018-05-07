@@ -123,12 +123,12 @@ public class BasicController {
         return result;
     }
 
-    @RequestMapping("/submitBlog/{userId}/{blogTitle}/{blogContent}")
+    @RequestMapping("/submitBlog/{userId}/{code}/{blogTitle}/{blogContent}")
     @ResponseBody
-    public Map changeUserInfo(@PathVariable("userId") String userId, @PathVariable("blogTitle") String blogTitle, @PathVariable("blogContent") String blogContent){
+    public Map changeUserInfo(@PathVariable("userId") String userId, @PathVariable("code") String blogCode, @PathVariable("blogTitle") String blogTitle, @PathVariable("blogContent") String blogContent){
 
         Map<String, Object> result = new HashMap<String, Object>(5);
-        String sql = "insert into blog_"+userId+" values('"+blogTitle+"', '"+blogContent+"', CURRENT_TIME());";
+        String sql = "insert into blog_"+userId+" values('"+blogCode+"', '"+blogTitle+"', '"+blogContent+"', CURRENT_TIME());";
         try {
             Statement statement = conn.createStatement();
             statement.executeUpdate(sql);

@@ -2,12 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77fbe3c-b754-48f4-b0ff-ccd8bc211513" name="Default" comment="">
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/style.css" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/style.css" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/index.html" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,24 +26,24 @@
   <component name="ExecutionTargetManager" SELECTED_TARGET="default_target" />
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file leaf-file-name="BasicController.java" pinned="false" current-in-tab="false">
+      <file leaf-file-name="BasicController.java" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
+            <state relative-caret-position="176">
+              <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
               <folding>
-                <marker date="1525706881217" expanded="true" signature="1572:1607" ph="select passw... user" />
-                <marker date="1525706881217" expanded="true" signature="1572:1608" ph="select passw... user" />
-                <marker date="1525706881217" expanded="true" signature="1572:1619" ph="select passw... user" />
-                <marker date="1525706881217" expanded="true" signature="2447:2487" ph="select * fro... user" />
-                <marker date="1525706881217" expanded="true" signature="3749:3764" ph="update user " />
-                <marker date="1525706881217" expanded="true" signature="4771:4788" ph="insert into blog_... " />
-                <marker date="1525706881217" expanded="true" signature="4771:4800" ph="insert into blog_missingValuev... " />
-                <marker date="1525706881217" expanded="true" signature="4771:4807" ph="insert into blog_missingValuevalues... " />
-                <marker date="1525706881217" expanded="true" signature="4771:4824" ph="insert into blog_missingValuevalues... " />
-                <marker date="1525706881217" expanded="true" signature="4771:4857" ph="insert into blog_missingValuevalues... " />
-                <marker date="1525706881217" expanded="true" signature="5675:5694" ph="select * fro... user_" />
-                <marker date="1525706881217" expanded="true" signature="5675:5708" ph="select * fro... user_" />
+                <marker date="1525711478558" expanded="true" signature="1572:1607" ph="select passw... user" />
+                <marker date="1525711478558" expanded="true" signature="1572:1608" ph="select passw... user" />
+                <marker date="1525711478558" expanded="true" signature="1572:1619" ph="select passw... user" />
+                <marker date="1525711478558" expanded="true" signature="2447:2487" ph="select * fro... user" />
+                <marker date="1525711478558" expanded="true" signature="3749:3764" ph="update user " />
+                <marker date="1525711478558" expanded="true" signature="4817:4834" ph="insert into blog_... " />
+                <marker date="1525711478558" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
+                <marker date="1525711478558" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
+                <marker date="1525711478558" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
+                <marker date="1525711478558" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
+                <marker date="1525711478558" expanded="true" signature="5737:5756" ph="select * fro... user_" />
+                <marker date="1525711478558" expanded="true" signature="5737:5770" ph="select * fro... user_" />
               </folding>
             </state>
           </provider>
@@ -77,11 +73,21 @@
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="media-queries.css" pinned="false" current-in-tab="true">
+      <file leaf-file-name="media-queries.css" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="190">
-              <caret line="148" column="18" lean-forward="true" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+            <state relative-caret-position="278">
+              <caret line="152" column="10" lean-forward="true" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
+              <folding />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="profile.js" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="211">
+              <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
               <folding />
             </state>
           </provider>
@@ -109,7 +115,6 @@
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jquery.backstretch.min.js</find>
       <find>..</find>
       <find>\.\.</find>
       <find>jpg</find>
@@ -139,6 +144,7 @@
       <find>boo</find>
       <find>style.css</find>
       <find>content</find>
+      <find>sub</find>
     </findStrings>
     <replaceStrings>
       <replace>\.\.\/images</replace>
@@ -171,16 +177,16 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/assets/js/app.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.js" />
         <option value="$PROJECT_DIR$/src/main/resources/db_init.sql" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/login.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/login_assets/css/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/login_assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html" />
-        <option value="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/style.css" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
+        <option value="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
       </list>
     </option>
   </component>
@@ -1201,15 +1207,15 @@
       <workItem from="1525616513128" duration="2502000" />
       <workItem from="1525619113781" duration="750000" />
       <workItem from="1525699899071" duration="7220000" />
-      <workItem from="1525707298698" duration="3753000" />
+      <workItem from="1525707298698" duration="4171000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="39929000" />
+    <option name="totallyTimeSpent" value="40347000" />
   </component>
   <component name="ToolWindowManager">
-    <frame x="0" y="0" width="1366" height="768" extended-state="6" />
+    <frame x="0" y="0" width="1366" height="768" extended-state="7" />
     <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
@@ -1268,18 +1274,18 @@
         <state relative-caret-position="2684">
           <caret line="133" column="0" lean-forward="false" selection-start-line="133" selection-start-column="0" selection-end-line="133" selection-end-column="0" />
           <folding>
-            <marker date="1525706881217" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525706881217" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525706881217" expanded="true" signature="4771:4788" ph="insert into blog_... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4800" ph="insert into blog_missingValuev... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4807" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4824" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4857" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="5675:5694" ph="select * fro... user_" />
-            <marker date="1525706881217" expanded="true" signature="5675:5708" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="1572:1607" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1608" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1619" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <marker date="1525711478558" expanded="true" signature="3749:3764" ph="update user " />
+            <marker date="1525711478558" expanded="true" signature="4817:4834" ph="insert into blog_... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="5737:5756" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="5737:5770" ph="select * fro... user_" />
           </folding>
         </state>
       </provider>
@@ -1295,6 +1301,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3740">
           <caret line="170" column="27" lean-forward="false" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1318,18 +1325,18 @@
         <state relative-caret-position="2266">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <marker date="1525706881217" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525706881217" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525706881217" expanded="true" signature="4771:4788" ph="insert into blog_... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4800" ph="insert into blog_missingValuev... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4807" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4824" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4857" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="5675:5694" ph="select * fro... user_" />
-            <marker date="1525706881217" expanded="true" signature="5675:5708" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="1572:1607" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1608" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1619" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <marker date="1525711478558" expanded="true" signature="3749:3764" ph="update user " />
+            <marker date="1525711478558" expanded="true" signature="4817:4834" ph="insert into blog_... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="5737:5756" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="5737:5770" ph="select * fro... user_" />
           </folding>
         </state>
       </provider>
@@ -1346,6 +1353,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="3630">
           <caret line="165" column="54" lean-forward="false" selection-start-line="165" selection-start-column="54" selection-end-line="165" selection-end-column="54" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1354,18 +1362,18 @@
         <state relative-caret-position="220">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <marker date="1525706881217" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525706881217" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525706881217" expanded="true" signature="4771:4788" ph="insert into blog_... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4800" ph="insert into blog_missingValuev... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4807" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4824" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4857" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="5675:5694" ph="select * fro... user_" />
-            <marker date="1525706881217" expanded="true" signature="5675:5708" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="1572:1607" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1608" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1619" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <marker date="1525711478558" expanded="true" signature="3749:3764" ph="update user " />
+            <marker date="1525711478558" expanded="true" signature="4817:4834" ph="insert into blog_... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="5737:5756" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="5737:5770" ph="select * fro... user_" />
           </folding>
         </state>
       </provider>
@@ -1596,13 +1604,6 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="132">
           <caret line="16" column="31" lean-forward="true" selection-start-line="16" selection-start-column="31" selection-end-line="16" selection-end-column="31" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="594">
-          <caret line="27" column="2" lean-forward="true" selection-start-line="1" selection-start-column="0" selection-end-line="27" selection-end-column="2" />
           <folding />
         </state>
       </provider>
@@ -1643,32 +1644,40 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="137" column="25" lean-forward="false" selection-start-line="137" selection-start-column="25" selection-end-line="137" selection-end-column="25" />
-          <folding>
-            <marker date="1525706881217" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525706881217" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525706881217" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525706881217" expanded="true" signature="4771:4788" ph="insert into blog_... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4800" ph="insert into blog_missingValuev... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4807" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4824" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="4771:4857" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525706881217" expanded="true" signature="5675:5694" ph="select * fro... user_" />
-            <marker date="1525706881217" expanded="true" signature="5675:5708" ph="select * fro... user_" />
-          </folding>
+        <state relative-caret-position="278">
+          <caret line="152" column="10" lean-forward="true" selection-start-line="152" selection-start-column="10" selection-end-line="152" selection-end-column="10" />
+          <folding />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css">
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="190">
-          <caret line="148" column="18" lean-forward="true" selection-start-line="148" selection-start-column="18" selection-end-line="148" selection-end-column="18" />
+        <state relative-caret-position="211">
+          <caret line="67" column="25" lean-forward="true" selection-start-line="67" selection-start-column="25" selection-end-line="67" selection-end-column="25" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="176">
+          <caret line="131" column="13" lean-forward="true" selection-start-line="131" selection-start-column="13" selection-end-line="131" selection-end-column="13" />
+          <folding>
+            <marker date="1525711478558" expanded="true" signature="1572:1607" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1608" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="1572:1619" ph="select passw... user" />
+            <marker date="1525711478558" expanded="true" signature="2447:2487" ph="select * fro... user" />
+            <marker date="1525711478558" expanded="true" signature="3749:3764" ph="update user " />
+            <marker date="1525711478558" expanded="true" signature="4817:4834" ph="insert into blog_... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525711478558" expanded="true" signature="5737:5756" ph="select * fro... user_" />
+            <marker date="1525711478558" expanded="true" signature="5737:5770" ph="select * fro... user_" />
+          </folding>
         </state>
       </provider>
     </entry>
