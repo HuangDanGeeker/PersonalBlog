@@ -3,9 +3,7 @@
 <head>
 <meta charset="UTF-8">
 <title>个人主页</title>
-
 <meta name="viewport" content="width=device-width,initial-scale=1">
-
 <link rel="stylesheet" href="../styles/style.css" media="screen" />
 <link rel="stylesheet" href="../styles/media-queries.css" />
 <link rel="stylesheet" href="../styles/flex-slider/flexslider.css" type="text/css" media="screen" />
@@ -20,106 +18,74 @@
 <script type="text/javascript" src="../scripts/jquery.smooth-scroll.min.js"></script>
 <script type="text/javascript" src="../scripts/waypoints.min.js"></script>
 <script type="text/javascript" src="../scripts/setup.js"></script>
-
-
 </head>
 <body>
-<div id="wrap"> 
-  <!-- wrapper -->
-  <div id="sidebar"> 
-    <!-- the  sidebar --> 
-    <!-- logo --> 
-    <a href="#" id="logo"> <img src="./images/logo.png" alt="" /></a> 
-    <!-- navigation menu -->
-<!--     <ul id="navigation">
-      <li><a href="#home" class="active">Home</a></li>
-      <li><a href="#about">About Us</a></li>
-      <li><a href="#portfolio">Portfolio</a></li>
-      <li><a href="#skills">Our Skills</a></li>
-      <li><a href="#industries">Industries</a></li>
-      <li><a href="#myclients">Our Clients</a></li>
-      <li><a href="#contact">Contact</a></li>
-    </ul> -->
-    <img src="./1.jpg" style="width: 220px;height: 220px">
-    <div style="margin-left: 10px;font-size: 16px">
-    在读院校：
-    <br>
-    专业：
-    <br>
-    电子邮箱： 
-    <br>
-    联系地址： 
-    </div>  
-  </div>
-  <div id="container"> 
-    <!-- page container -->
-        <div class="page" id="about"> 
-      <!-- page about -->
-      <h3 class="page_title"> 个人简历</h3>
-      <div class="page_content">
-
-        <div class="clear"> </div>
+  <div id="wrap">
+    <!-- wrapper -->
+    <div id="sidebar">
+      <!-- logo -->
+      <a href="#" id="logo"> <img src="../images/logo.png" alt="" /></a>
+      <img src="./1.jpg" style="width: 220px;height: 220px">
+      <div style="margin-left: 10px;font-size: 16px">
+      在读院校：
+      <br>
+      专业：
+      <br>
+      电子邮箱：
+      <br>
+      联系地址：
       </div>
     </div>
-    <div class="page" id="home"> 
-      <!-- page home -->
-      <div class="page_content">
+    <div id="container">
+      <!-- page container -->
+          <div class="page" id="about">
+        <!-- page about -->
+        <h3 class="page_title"> 个人简历</h3>
+        <div class="page_content">
 
-        <!-- services -->
-
-
-        <div class="clear"> </div>
+          <div class="clear"> </div>
+        </div>
       </div>
-    </div>
+      <div class="page" id="home">
+        <div class="page_content">
 
-    <div class="page" id="portfolio"> 
-      <!-- page portfolio -->
-      <h3 class="page_title"> 我的blog</h3>
-      <div class="page_content">
-        <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-        <ul id="works_filter">
-          <li><a href="#" data-filter="*" class="selected">Show All</a></li>
-          <li><a href="#" data-filter=".css">CSS</a></li>
-          <li><a href="#" data-filter=".html_php">HTML / PHP</a></li>
-          <li><a href="#" data-filter=".js">JavaScript</a></li>
-        </ul>
-        <div class="clear"> </div>
-        <div id="works"> 
-          <!-- works --> 
-          <a rel="prettyPhoto[gallery]" href="images/photos/01.jpg"> <img class="work js" src="images/photos/01.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/03.jpg"> <img class="work css" src="images/photos/03.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/04.jpg"> <img class="work html_php" src="images/photos/04.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/05.jpg"> <img class="work html_php" src="images/photos/05.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/06.jpg"> <img class="work css" src="images/photos/06.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/07.jpg"> <img class="work js" src="images/photos/07.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/08.jpg"> <img class="work html_php" src="./images/photos/08.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/09.jpg"> <img class="work js" src="images/photos/09.jpg" alt="" /> </a><a rel="prettyPhoto[gallery]" href="images/photos/10.jpg"> <img class="work html_php" src="images/photos/10.jpg" alt="" /> </a> </div>
-        <div class="clear"> </div>
+          <div class="clear"> </div>
+        </div>
       </div>
-    </div>
 
-    <div class="page" id="contact"> 
-      <!-- page contact -->
-      <h3 class="page_title"> Let's Get in Touch</h3>
-      <div class="page_content">
-        <fieldset id="contact_form">
-          <div id="msgs"> </div>
-          <form id="cform" name="cform" method="post" action="">
-            <input type="text" id="name" name="name" value="Full Name*" onFocus="if(this.value == 'Full Name*') this.value = ''"
-                            onblur="if(this.value == '') this.value = 'Full Name*'" />
-            <input type="text" id="email" name="email" value="Email Address*" onFocus="if(this.value == 'Email Address*') this.value = ''"
-                            onblur="if(this.value == '') this.value = 'Email Address*'" />
-            <input type="text" id="subject" name="subject" value="Subject*" onFocus="if(this.value == 'Subject*') this.value = ''"
-                            onblur="if(this.value == '') this.value = 'Subject*'" />
-            <textarea id="msg" name="message" onFocus="if(this.value == 'Your Message*') this.value = ''"
-                            onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
-            <button id="submit" class="button"> Send Message</button>
-          </form>
-        </fieldset>
-        <div class="clear"> </div>
-        <ul class="social_icons">
-          <li><a href="#" id="fb" original-title="Join My Fan Club"> <img src="images/facebook.png" alt="Facebook" /></a></li>
-          <li><a href="#" id="tw" original-title="Follow Me on Twitter"> <img src="images/twitter.png" alt="Twitter" /></a></li>
-          <li><a href="#" id="ld" original-title="Find me on LinkedIn"> <img src="images/linkedin.png" alt="LinkedIn" /></a></li>
-        </ul>
+      <div class="page" id="portfolio">
+        <!-- page portfolio -->
+        <h3 class="page_title"> 我的blog</h3>
+        <div class="page_content">
+          <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
+          <div class="clear"> </div>
+          <div class="clear"> </div>
+        </div>
+      </div>
+
+      <div class="page" id="contact">
+        <!-- page contact -->
+        <h3 class="page_title"> get in touch with me</h3>
+        <div class="page_content">
+          <fieldset id="contact_form">
+            <div id="msgs"> </div>
+            <form id="cform" name="cform" method="post" action="">
+              <input type="text" id="name" name="name" value="Full Name*" onFocus="if(this.value == 'Full Name*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Full Name*'" />
+              <input type="text" id="email" name="email" value="Email Address*" onFocus="if(this.value == 'Email Address*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Email Address*'" />
+              <input type="text" id="subject" name="subject" value="Subject*" onFocus="if(this.value == 'Subject*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Subject*'" />
+              <textarea id="msg" name="message" onFocus="if(this.value == 'Your Message*') this.value = ''"
+                              onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
+            </form>
+          </fieldset>
+          <div class="clear"> </div>
+        </div>
       </div>
     </div>
   </div>
-</div>
-<a class="gotop" href="#top">Top</a>
+  <a class="gotop" href="#top">Top</a>
 
 
 </body>
