@@ -142,6 +142,9 @@ div.page {
 	margin-bottom:0;
 	padding-top:20px
 }
+.blog_title{
+	font-weight:bold;
+}
 div.page_content {
 	padding:25px 0 40px 25px
 }

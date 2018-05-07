@@ -38,7 +38,7 @@ window.onload = function() {
     });
     //请求用户的博客信息
     $.ajax({
-        url:"http://localhost:8080/MyBlog/queryUserInfo/"+"123",
+        url:"http://localhost:8080/MyBlog/queryBlogInfo/"+"123",
         dataType:'jsonp',
         processData: true,
         typece:'put',
@@ -47,13 +47,6 @@ window.onload = function() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
-                $('#user-name').val(result.name);
-                $('#user-email').val(result.email);
-                $('#user-phone').val(result.phone);
-                $('#user-QQ').val(result.qqNum);
-                $('#user-intro').val(result.introduction);
-                $('#user-pic').val(result.pic);
-                $('#userName').text("    "+result.id + " / " +result.name)
                 $("#profile-pic").attr("src", result.pic);
                 $("#profile-name").text(result.name);
                 $("#profile-qqNum").val(result.qqNum);
@@ -61,9 +54,16 @@ window.onload = function() {
                 $("#profile-address").val(result.address);
                 $("#profile-id").text(result.id);
                 $("#profile-introduction").text(result.introduction);
+
+                addAnimationToBlogList();
             }else{
                 layer.msg("error in quer user info");
             }
         }
     });
 };
+
+
+function addAnimationToBlogList(){
+
+}
