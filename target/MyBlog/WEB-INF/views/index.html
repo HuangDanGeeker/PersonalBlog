@@ -18,48 +18,34 @@
 <script type="text/javascript" src="../scripts/jquery.smooth-scroll.min.js"></script>
 <script type="text/javascript" src="../scripts/waypoints.min.js"></script>
 <script type="text/javascript" src="../scripts/setup.js"></script>
+<script type="text/javascript" src="../scripts/index.js"></script>
 </head>
 <body>
   <div id="wrap">
     <!-- wrapper -->
     <div id="sidebar">
-      <!-- logo -->
-      <a href="#" id="logo"> <img src="../images/logo.png" alt="" /></a>
-      <img src="./1.jpg" style="width: 220px;height: 220px">
+      <div style="height: 40px"></div>
+      <img id="profile-pic" style="width: 220px;height: 220px">
       <div style="margin-left: 10px;font-size: 16px">
-      在读院校：
       <br>
-      专业：
+      <p id="profile-name"></p>
       <br>
-      电子邮箱：
+      <p id="profile-id"></p>
       <br>
-      联系地址：
+      <br>
+      <br>
       </div>
     </div>
     <div id="container">
       <!-- page container -->
           <div class="page" id="about">
-        <!-- page about -->
         <h3 class="page_title"> 个人简历</h3>
-        <div class="page_content">
-
-          <div class="clear"> </div>
-        </div>
-      </div>
-      <div class="page" id="home">
-        <div class="page_content">
-
-          <div class="clear"> </div>
-        </div>
-      </div>
-
+        <div class="page_content"><p id="profile-introduction"></p> </div>
+          </div>
       <div class="page" id="portfolio">
-        <!-- page portfolio -->
         <h3 class="page_title"> 我的blog</h3>
         <div class="page_content">
-          <p> xxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxxx</p>
-          <div class="clear"> </div>
-          <div class="clear"> </div>
+
         </div>
       </div>
 
@@ -70,14 +56,9 @@
           <fieldset id="contact_form">
             <div id="msgs"> </div>
             <form id="cform" name="cform" method="post" action="">
-              <input type="text" id="name" name="name" value="Full Name*" onFocus="if(this.value == 'Full Name*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Full Name*'" />
-              <input type="text" id="email" name="email" value="Email Address*" onFocus="if(this.value == 'Email Address*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Email Address*'" />
-              <input type="text" id="subject" name="subject" value="Subject*" onFocus="if(this.value == 'Subject*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Subject*'" />
-              <textarea id="msg" name="message" onFocus="if(this.value == 'Your Message*') this.value = ''"
-                              onblur="if(this.value == '') this.value = 'Your Message*'">Your Message*</textarea>
+              <input type="text" id="profile-qqNum" value="qq Num" disabled="disabled" />
+              <input type="text" id="profile-email" value="email" disabled="disabled" />
+              <input type="text" id="profile-address"value="address" disabled="disabled" />
             </form>
           </fieldset>
           <div class="clear"> </div>

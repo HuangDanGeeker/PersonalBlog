@@ -86,6 +86,8 @@ public class BasicController {
                 result.put("qqNum", resultSet.getString(4));
                 result.put("introduction", resultSet.getString(5));
                 result.put("name", resultSet.getString(6));
+                result.put("pic", resultSet.getString(8));
+                result.put("address", resultSet.getString(9));
                 return result;
             }
 
@@ -146,6 +148,27 @@ public class BasicController {
         return "index";
     }
 
+    @RequestMapping("/queryBlogInfo/{userId}")
+    @ResponseBody
+    public Map queryBlogInfo(@PathVariable("userId") String userId){
 
+        Map<String, Object> result = new HashMap<String, Object>(5);
+        try {
+            Statement statement = conn.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from blog_"+userId+";");
+            if( resultSet.next()){
+                result.put("status", "success");
+                result.put("title", resultSet.getString(1));
+                result.put("content", resultSet.getString(2));
+                result.put("submitTime", resultSet.getString(3));
+                return result;
+            }
+
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        result.put("status", "failure");
+        return result;
+    }
 
 }
