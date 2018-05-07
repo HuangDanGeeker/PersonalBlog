@@ -4,7 +4,7 @@ jQuery(document).ready(function() {
     /*
         Fullscreen background
     */
-    $.backstretch("login_assets/img/backgrounds/1.jpg");
+    // $.backstretch("login_assets/img/backgrounds/1.jpg");
     
     /*
         Form validation

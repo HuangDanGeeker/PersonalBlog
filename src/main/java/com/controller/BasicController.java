@@ -139,7 +139,7 @@ public class BasicController {
         return result;
     }
 
-    @RequestMapping("/blog/index/{userId}")
+    @RequestMapping("/index/{userId}")
     public String changeUserInfo(@PathVariable("userId") String userId){
 
 
