@@ -5,10 +5,11 @@ var userId;
 var blogCode;
 window.onload = function() {
     var location = new String(window.location);
-    blogCode = new String(location).substr(new String(location).lastIndexOf('/')+1);
-    userId= new String(location).substr(0, new String(location).lastIndexOf('/'));
-    userId = new String(userId).substr(new String(userId).lastIndexOf('/')+1);
-    alert(userId);
+    userId = new String(location).substr(new String(location).lastIndexOf('/')+1);
+    blogCode = new String(userId).substr(new String(userId).lastIndexOf('_')+1);
+    userId = new String(userId).substr(0, new String(userId).lastIndexOf('_'));
+    console.log(userId);
+    console.log(blogCode);
     $('#indexPageLink').attr('href', "../blog/index/"+userId);
     //请求用户的基本信息
     $.ajax({
@@ -21,6 +22,13 @@ window.onload = function() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
+                $('#user-name').val(result.name);
+                $('#user-email').val(result.email);
+                $('#user-phone').val(result.phone);
+                $('#user-QQ').val(result.qqNum);
+                $('#user-intro').val(result.introduction);
+                $('#user-pic').val(result.pic);
+                $('#userName').text("    "+result.id + " / " +result.name)
                 $("#profile-pic").attr("src", result.pic);
                 $("#profile-name").text(result.name);
                 $("#profile-qqNum").val(result.qqNum);

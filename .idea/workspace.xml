@@ -2,9 +2,19 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="a77fbe3c-b754-48f4-b0ff-ccd8bc211513" name="Default" comment="">
+      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/src/main/java/com/bean/Blog.java" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/classes/com/controller/BasicController.class" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/classes/com/controller/BasicController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/classes/com/controller/BasicController.class" afterPath="$PROJECT_DIR$/target/classes/com/controller/BasicController.class" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/.idea/workspace.xml" afterPath="$PROJECT_DIR$/.idea/workspace.xml" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" afterPath="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index_blog.js" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index_blog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index_blog.html" afterPath="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index_blog.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/scripts/index.js" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/scripts/index.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/scripts/index_blog.js" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/scripts/index_blog.js" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/index.html" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/index.html" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/index_blog.html" afterPath="$PROJECT_DIR$/target/MyBlog/WEB-INF/views/index_blog.html" />
     </list>
     <ignored path="$PROJECT_DIR$/out/" />
     <ignored path="$PROJECT_DIR$/target/" />
@@ -30,39 +40,60 @@
       <file leaf-file-name="BasicController.java" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="385">
-              <caret line="191" column="32" lean-forward="false" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+            <state relative-caret-position="156">
+              <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
               <folding>
-                <element signature="e#2296#2312#0" expanded="true" />
-                <element signature="e#3706#3722#0" expanded="true" />
-                <element signature="e#4774#4790#0" expanded="true" />
-                <element signature="e#5585#5601#0" expanded="true" />
-                <element signature="e#5652#5668#0" expanded="true" />
-                <element signature="e#6704#6720#0" expanded="true" />
-                <marker date="1525793586164" expanded="true" signature="1572:1607" ph="select passw... user" />
-                <marker date="1525793586164" expanded="true" signature="1572:1608" ph="select passw... user" />
-                <marker date="1525793586164" expanded="true" signature="1572:1619" ph="select passw... user" />
-                <marker date="1525793586164" expanded="true" signature="2447:2487" ph="select * fro... user" />
-                <marker date="1525793586164" expanded="true" signature="3749:3764" ph="update user " />
-                <marker date="1525793586164" expanded="true" signature="4817:4834" ph="insert into blog_... " />
-                <marker date="1525793586164" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
-                <marker date="1525793586164" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
-                <marker date="1525793586164" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
-                <marker date="1525793586164" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
-                <marker date="1525793586164" expanded="true" signature="5803:5822" ph="select * fro... user_" />
-                <marker date="1525793586164" expanded="true" signature="5803:5836" ph="select * fro... user_" />
-                <marker date="1525793586164" expanded="true" signature="6855:6910" ph="select * fro... blog_missingValue" />
+                <element signature="e#2369#2385#0" expanded="true" />
+                <element signature="e#3779#3795#0" expanded="true" />
+                <element signature="e#4847#4863#0" expanded="true" />
+                <element signature="e#5436#5437#0" expanded="true" />
+                <element signature="e#5466#5467#0" expanded="true" />
+                <element signature="e#5577#5578#0" expanded="true" />
+                <element signature="e#5612#5613#0" expanded="true" />
+                <element signature="e#5797#5813#0" expanded="true" />
+                <element signature="e#6764#6780#0" expanded="true" />
+                <marker date="1525798152160" expanded="true" signature="1645:1680" ph="select passw... user" />
+                <marker date="1525798152160" expanded="true" signature="1645:1681" ph="select passw... user" />
+                <marker date="1525798152160" expanded="true" signature="1645:1692" ph="select passw... user" />
+                <marker date="1525798152160" expanded="true" signature="2520:2560" ph="select * fro... user" />
+                <marker date="1525798152160" expanded="true" signature="3822:3837" ph="update user " />
+                <marker date="1525798152160" expanded="true" signature="4890:4907" ph="insert into blog_... " />
+                <marker date="1525798152160" expanded="true" signature="4890:4919" ph="insert into blog_missingValuev... " />
+                <marker date="1525798152160" expanded="true" signature="4890:4926" ph="insert into blog_missingValuevalues... " />
+                <marker date="1525798152160" expanded="true" signature="4890:4959" ph="insert into blog_missingValuevalues... " />
+                <marker date="1525798152160" expanded="true" signature="4890:4992" ph="insert into blog_missingValuevalues... " />
+                <marker date="1525798152160" expanded="true" signature="5948:5967" ph="select * fro... user_" />
+                <marker date="1525798152160" expanded="true" signature="5948:5981" ph="select * fro... user_" />
+                <marker date="1525798152160" expanded="true" signature="6915:6970" ph="select * fro... blog_missingValue" />
               </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index.js" pinned="false" current-in-tab="false">
+      <file leaf-file-name="index.html" pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="178">
+              <caret line="51" column="138" lean-forward="false" selection-start-line="51" selection-start-column="105" selection-end-line="51" selection-end-column="138" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file leaf-file-name="index.js" pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="308">
-              <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-              <folding />
+            <state relative-caret-position="424">
+              <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+              <folding>
+                <marker date="1525798907324" expanded="true" signature="2169:2202" ph="..." />
+                <marker date="1525798907324" expanded="true" signature="2326:2359" ph="..." />
+                <marker date="1525798907324" expanded="true" signature="2396:2429" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -70,18 +101,22 @@
       <file leaf-file-name="index_blog.html" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index_blog.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="440">
-              <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-              <folding />
+            <state relative-caret-position="286">
+              <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+              <folding>
+                <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+                <element signature="n#style#0;n#div#2;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
             </state>
           </provider>
         </entry>
       </file>
-      <file leaf-file-name="index_blog.js" pinned="false" current-in-tab="true">
+      <file leaf-file-name="index_blog.js" pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index_blog.js">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="380">
-              <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+            <state relative-caret-position="308">
+              <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
               <folding />
             </state>
           </provider>
@@ -92,19 +127,13 @@
   <component name="FileTemplateManagerImpl">
     <option name="RECENT_TEMPLATES">
       <list>
-        <option value="Class" />
         <option value="JavaScript File" />
+        <option value="Class" />
       </list>
     </option>
   </component>
   <component name="FindInProjectRecents">
     <findStrings>
-      <find>jpg</find>
-      <find>主页</find>
-      <find>个人资料</find>
-      <find>你的</find>
-      <find>layer</find>
-      <find>pass</find>
       <find>保存修改</find>
       <find>queryUserInfo</find>
       <find>管理员</find>
@@ -129,6 +158,12 @@
       <find>sub</find>
       <find>queryB</find>
       <find>item</find>
+      <find>wang</find>
+      <find>index/</find>
+      <find>prettyPhoto</find>
+      <find>flexslider.css</find>
+      <find>jquery.flexslider-min.js</find>
+      <find>signalIndex</find>
     </findStrings>
     <replaceStrings>
       <replace>\.\.\/images</replace>
@@ -167,13 +202,14 @@
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/login_assets/js/scripts.js" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/style.css" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index_blog.html" />
+        <option value="$PROJECT_DIR$/src/main/java/com/bean/Blog.java" />
         <option value="$PROJECT_DIR$/src/main/java/com/controller/BasicController.java" />
-        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index_blog.html" />
         <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index_blog.js" />
+        <option value="$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js" />
       </list>
     </option>
   </component>
@@ -520,6 +556,48 @@
               <option name="myItemId" value="assets" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="js" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="webapp" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="WEB-INF" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="views" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="admin" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="assets" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
@@ -719,6 +797,36 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="MyBlog" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="src" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="main" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="java" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="com" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="bean" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+          </PATH>
         </subPane>
       </pane>
     </panes>
@@ -731,7 +839,7 @@
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
     <property name="FullScreen" value="true" />
-    <property name="SearchEverywhereHistoryKey" value="flex&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/flex-slider/flexslider.css&#10;setup\&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/scripts/setup.js&#10;jquery.backstretch.min.js&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/styles/login_assets/js/jquery.backstretch.min.js" />
+    <property name="SearchEverywhereHistoryKey" value="jquery.flexslider-min.js&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/styles/flex-slider/jquery.flexslider-min.js&#10;jquery.prettyPhoto.js&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/scripts/jquery.prettyPhoto.js&#10;flex&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/flex-slider/flexslider.css&#10;setup\&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/scripts/setup.js&#10;jquery.backstretch.min.js&#9;FILE&#9;file://E:/JavaLearn/IntelliJ/MyBlog/src/main/webapp/WEB-INF/styles/login_assets/js/jquery.backstretch.min.js" />
     <property name="com.intellij.database.dataSource.DataSourceTemplate" value="MySQ" />
   </component>
   <component name="RecentsManager">
@@ -1131,16 +1239,15 @@
       <workItem from="1525619113781" duration="750000" />
       <workItem from="1525699899071" duration="7220000" />
       <workItem from="1525707298698" duration="4415000" />
-      <workItem from="1525789875198" duration="4049000" />
+      <workItem from="1525789875198" duration="8768000" />
     </task>
     <servers />
   </component>
   <component name="TimeTrackingManager">
-    <option name="totallyTimeSpent" value="44640000" />
+    <option name="totallyTimeSpent" value="49359000" />
   </component>
   <component name="ToolWindowManager">
     <frame x="0" y="0" width="1366" height="768" extended-state="6" />
-    <editor active="true" />
     <layout>
       <window_info id="Palette" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
@@ -1155,13 +1262,13 @@
       <window_info id="Spring" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="12" side_tool="false" content_ui="tabs" />
       <window_info id="Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26783004" sideWeight="0.5" order="0" side_tool="false" content_ui="combo" />
-      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="5" side_tool="true" content_ui="tabs" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" show_stripe_button="true" weight="0.26783004" sideWeight="0.4939759" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Web" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.26783004" sideWeight="0.5060241" order="5" side_tool="true" content_ui="tabs" />
       <window_info id="Database" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.32852808" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="UI Designer" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="4" side_tool="true" content_ui="tabs" />
-      <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="false" show_stripe_button="true" weight="0.34186748" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
+      <window_info id="Debug" active="true" anchor="bottom" auto_hide="false" internal_type="SLIDING" type="SLIDING" visible="true" show_stripe_button="true" weight="0.34186748" sideWeight="0.5" order="5" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.25" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
       <window_info id="Commander" active="false" anchor="right" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" show_stripe_button="true" weight="0.4" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -1185,59 +1292,33 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/src/main/resources/db_init.sql">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="220">
-          <caret line="10" column="0" lean-forward="false" selection-start-line="10" selection-start-column="0" selection-end-line="10" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/profile.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3740">
-          <caret line="170" column="27" lean-forward="false" selection-start-line="170" selection-start-column="27" selection-end-line="170" selection-end-column="27" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/profile.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1122">
-          <caret line="51" column="0" lean-forward="false" selection-start-line="51" selection-start-column="0" selection-end-line="51" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="jar://$MAVEN_REPOSITORY$/org/springframework/spring-web/4.1.4.RELEASE/spring-web-4.1.4.RELEASE-sources.jar!/org/springframework/web/method/support/InvocableHandlerMethod.java">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="4950">
-          <caret line="225" column="9" lean-forward="true" selection-start-line="225" selection-start-column="9" selection-end-line="225" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2266">
           <caret line="114" column="0" lean-forward="false" selection-start-line="114" selection-start-column="0" selection-end-line="114" selection-end-column="0" />
           <folding>
-            <element signature="e#2296#2312#0" expanded="true" />
-            <element signature="e#3706#3722#0" expanded="true" />
-            <element signature="e#4774#4790#0" expanded="true" />
-            <element signature="e#5585#5601#0" expanded="true" />
-            <element signature="e#5652#5668#0" expanded="true" />
-            <element signature="e#6704#6720#0" expanded="true" />
-            <marker date="1525793586164" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525793586164" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525793586164" expanded="true" signature="4817:4834" ph="insert into blog_... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="5803:5822" ph="select * fro... user_" />
-            <marker date="1525793586164" expanded="true" signature="5803:5836" ph="select * fro... user_" />
-            <marker date="1525793586164" expanded="true" signature="6855:6910" ph="select * fro... blog_missingValue" />
+            <element signature="e#2369#2385#0" expanded="true" />
+            <element signature="e#3779#3795#0" expanded="true" />
+            <element signature="e#4847#4863#0" expanded="true" />
+            <element signature="e#5436#5437#0" expanded="true" />
+            <element signature="e#5466#5467#0" expanded="true" />
+            <element signature="e#5577#5578#0" expanded="true" />
+            <element signature="e#5612#5613#0" expanded="true" />
+            <element signature="e#5797#5813#0" expanded="true" />
+            <element signature="e#6764#6780#0" expanded="true" />
+            <marker date="1525798152160" expanded="true" signature="1645:1680" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="1645:1681" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="1645:1692" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="2520:2560" ph="select * fro... user" />
+            <marker date="1525798152160" expanded="true" signature="3822:3837" ph="update user " />
+            <marker date="1525798152160" expanded="true" signature="4890:4907" ph="insert into blog_... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4919" ph="insert into blog_missingValuev... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4926" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4959" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4992" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="5948:5967" ph="select * fro... user_" />
+            <marker date="1525798152160" expanded="true" signature="5948:5981" ph="select * fro... user_" />
+            <marker date="1525798152160" expanded="true" signature="6915:6970" ph="select * fro... blog_missingValue" />
           </folding>
         </state>
       </provider>
@@ -1262,25 +1343,28 @@
         <state relative-caret-position="220">
           <caret line="11" column="20" lean-forward="false" selection-start-line="11" selection-start-column="20" selection-end-line="11" selection-end-column="20" />
           <folding>
-            <element signature="e#2296#2312#0" expanded="true" />
-            <element signature="e#3706#3722#0" expanded="true" />
-            <element signature="e#4774#4790#0" expanded="true" />
-            <element signature="e#5585#5601#0" expanded="true" />
-            <element signature="e#5652#5668#0" expanded="true" />
-            <element signature="e#6704#6720#0" expanded="true" />
-            <marker date="1525793586164" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525793586164" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525793586164" expanded="true" signature="4817:4834" ph="insert into blog_... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="5803:5822" ph="select * fro... user_" />
-            <marker date="1525793586164" expanded="true" signature="5803:5836" ph="select * fro... user_" />
-            <marker date="1525793586164" expanded="true" signature="6855:6910" ph="select * fro... blog_missingValue" />
+            <element signature="e#2369#2385#0" expanded="true" />
+            <element signature="e#3779#3795#0" expanded="true" />
+            <element signature="e#4847#4863#0" expanded="true" />
+            <element signature="e#5436#5437#0" expanded="true" />
+            <element signature="e#5466#5467#0" expanded="true" />
+            <element signature="e#5577#5578#0" expanded="true" />
+            <element signature="e#5612#5613#0" expanded="true" />
+            <element signature="e#5797#5813#0" expanded="true" />
+            <element signature="e#6764#6780#0" expanded="true" />
+            <marker date="1525798152160" expanded="true" signature="1645:1680" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="1645:1681" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="1645:1692" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="2520:2560" ph="select * fro... user" />
+            <marker date="1525798152160" expanded="true" signature="3822:3837" ph="update user " />
+            <marker date="1525798152160" expanded="true" signature="4890:4907" ph="insert into blog_... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4919" ph="insert into blog_missingValuev... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4926" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4959" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4992" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="5948:5967" ph="select * fro... user_" />
+            <marker date="1525798152160" expanded="true" signature="5948:5981" ph="select * fro... user_" />
+            <marker date="1525798152160" expanded="true" signature="6915:6970" ph="select * fro... blog_missingValue" />
           </folding>
         </state>
       </provider>
@@ -1331,14 +1415,6 @@
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/images/logo.png">
       <provider selected="true" editor-type-id="images">
         <state />
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="286">
-          <caret line="13" column="13" lean-forward="false" selection-start-line="13" selection-start-column="13" selection-end-line="13" selection-end-column="13" />
-          <folding />
-        </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/admin/index.html">
@@ -1428,14 +1504,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/resources/configs/spring-servlet.xml">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="261">
-          <caret line="29" column="32" lean-forward="true" selection-start-line="29" selection-start-column="32" selection-end-line="29" selection-end-column="32" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$APPLICATION_CONFIG_DIR$/consoles/db/70b0d4ca-c18a-4513-8262-ceea4a53a24a/console.sql">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="0">
@@ -1490,6 +1558,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="220">
           <caret line="10" column="18" lean-forward="true" selection-start-line="10" selection-start-column="18" selection-end-line="10" selection-end-column="18" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1502,6 +1571,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="2266">
           <caret line="103" column="29" lean-forward="false" selection-start-line="103" selection-start-column="28" selection-end-line="103" selection-end-column="29" />
+          <folding />
         </state>
       </provider>
     </entry>
@@ -1536,18 +1606,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="22">
-          <caret line="51" column="52" lean-forward="false" selection-start-line="51" selection-start-column="52" selection-end-line="51" selection-end-column="52" />
-          <folding>
-            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-            <element signature="n#style#0;n#div#2;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/media-queries.css">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="22">
@@ -1556,55 +1614,145 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/resources/configs/spring-servlet.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="32" column="35" lean-forward="false" selection-start-line="32" selection-start-column="35" selection-end-line="32" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/web.xml">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="247">
+          <caret line="17" column="35" lean-forward="false" selection-start-line="17" selection-start-column="35" selection-end-line="17" selection-end-column="35" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/java/com/bean/Blog.java">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="220">
+          <caret line="10" column="5" lean-forward="true" selection-start-line="10" selection-start-column="5" selection-end-line="10" selection-end-column="5" />
+          <folding>
+            <element signature="e#142#143#0" expanded="true" />
+            <element signature="e#169#170#0" expanded="true" />
+            <element signature="e#209#210#0" expanded="true" />
+            <element signature="e#241#242#0" expanded="true" />
+            <element signature="e#273#274#0" expanded="true" />
+            <element signature="e#301#302#0" expanded="true" />
+            <element signature="e#343#344#0" expanded="true" />
+            <element signature="e#377#378#0" expanded="true" />
+            <element signature="e#414#415#0" expanded="true" />
+            <element signature="e#447#448#0" expanded="true" />
+            <element signature="e#499#500#0" expanded="true" />
+            <element signature="e#543#544#0" expanded="true" />
+            <element signature="e#577#578#0" expanded="true" />
+            <element signature="e#607#608#0" expanded="true" />
+            <element signature="e#653#654#0" expanded="true" />
+            <element signature="e#691#692#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/jquery.prettyPhoto.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding>
+            <element signature="n#!!doc" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/flex-slider/jquery.flexslider-min.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="88">
+          <caret line="4" column="27" lean-forward="true" selection-start-line="4" selection-start-column="27" selection-end-line="4" selection-end-column="27" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/styles/prettyPhoto.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="0">
+          <caret line="0" column="0" lean-forward="false" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/src/main/java/com/controller/BasicController.java">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="385">
-          <caret line="191" column="32" lean-forward="false" selection-start-line="191" selection-start-column="32" selection-end-line="191" selection-end-column="32" />
+        <state relative-caret-position="156">
+          <caret line="149" column="5" lean-forward="true" selection-start-line="149" selection-start-column="5" selection-end-line="149" selection-end-column="5" />
           <folding>
-            <element signature="e#2296#2312#0" expanded="true" />
-            <element signature="e#3706#3722#0" expanded="true" />
-            <element signature="e#4774#4790#0" expanded="true" />
-            <element signature="e#5585#5601#0" expanded="true" />
-            <element signature="e#5652#5668#0" expanded="true" />
-            <element signature="e#6704#6720#0" expanded="true" />
-            <marker date="1525793586164" expanded="true" signature="1572:1607" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="1572:1608" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="1572:1619" ph="select passw... user" />
-            <marker date="1525793586164" expanded="true" signature="2447:2487" ph="select * fro... user" />
-            <marker date="1525793586164" expanded="true" signature="3749:3764" ph="update user " />
-            <marker date="1525793586164" expanded="true" signature="4817:4834" ph="insert into blog_... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4846" ph="insert into blog_missingValuev... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4853" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4886" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="4817:4919" ph="insert into blog_missingValuevalues... " />
-            <marker date="1525793586164" expanded="true" signature="5803:5822" ph="select * fro... user_" />
-            <marker date="1525793586164" expanded="true" signature="5803:5836" ph="select * fro... user_" />
-            <marker date="1525793586164" expanded="true" signature="6855:6910" ph="select * fro... blog_missingValue" />
+            <element signature="e#2369#2385#0" expanded="true" />
+            <element signature="e#3779#3795#0" expanded="true" />
+            <element signature="e#4847#4863#0" expanded="true" />
+            <element signature="e#5436#5437#0" expanded="true" />
+            <element signature="e#5466#5467#0" expanded="true" />
+            <element signature="e#5577#5578#0" expanded="true" />
+            <element signature="e#5612#5613#0" expanded="true" />
+            <element signature="e#5797#5813#0" expanded="true" />
+            <element signature="e#6764#6780#0" expanded="true" />
+            <marker date="1525798152160" expanded="true" signature="1645:1680" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="1645:1681" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="1645:1692" ph="select passw... user" />
+            <marker date="1525798152160" expanded="true" signature="2520:2560" ph="select * fro... user" />
+            <marker date="1525798152160" expanded="true" signature="3822:3837" ph="update user " />
+            <marker date="1525798152160" expanded="true" signature="4890:4907" ph="insert into blog_... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4919" ph="insert into blog_missingValuev... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4926" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4959" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="4890:4992" ph="insert into blog_missingValuevalues... " />
+            <marker date="1525798152160" expanded="true" signature="5948:5967" ph="select * fro... user_" />
+            <marker date="1525798152160" expanded="true" signature="5948:5981" ph="select * fro... user_" />
+            <marker date="1525798152160" expanded="true" signature="6915:6970" ph="select * fro... blog_missingValue" />
           </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index_blog.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="440">
-          <caret line="20" column="61" lean-forward="false" selection-start-line="20" selection-start-column="61" selection-end-line="20" selection-end-column="61" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="308">
-          <caret line="49" column="0" lean-forward="true" selection-start-line="49" selection-start-column="0" selection-end-line="49" selection-end-column="0" />
-          <folding />
+        <state relative-caret-position="286">
+          <caret line="18" column="49" lean-forward="false" selection-start-line="18" selection-start-column="49" selection-end-line="18" selection-end-column="49" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index_blog.js">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="380">
-          <caret line="48" column="18" lean-forward="true" selection-start-line="48" selection-start-column="18" selection-end-line="48" selection-end-column="18" />
+        <state relative-caret-position="308">
+          <caret line="14" column="12" lean-forward="true" selection-start-line="14" selection-start-column="12" selection-end-line="14" selection-end-column="12" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/views/index.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="178">
+          <caret line="51" column="138" lean-forward="false" selection-start-line="51" selection-start-column="105" selection-end-line="51" selection-end-column="138" />
+          <folding>
+            <element signature="n#style#0;n#div#0;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#1;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+            <element signature="n#style#0;n#div#2;n#div#0;n#td#0;n#tr#0;n#table#0;n#div#0;n#div#1;n#div#1;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/src/main/webapp/WEB-INF/scripts/index.js">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="424">
+          <caret line="58" column="7" lean-forward="true" selection-start-line="58" selection-start-column="7" selection-end-line="58" selection-end-column="7" />
+          <folding>
+            <marker date="1525798907324" expanded="true" signature="2169:2202" ph="..." />
+            <marker date="1525798907324" expanded="true" signature="2326:2359" ph="..." />
+            <marker date="1525798907324" expanded="true" signature="2396:2429" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>

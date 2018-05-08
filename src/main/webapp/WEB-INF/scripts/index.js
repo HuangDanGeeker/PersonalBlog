@@ -47,8 +47,11 @@ window.onload = function() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
-
-                addAnimationToBlogList();
+                for(var i =0; i < result['result'].length; i++ ){
+                    console.log(result['result'][i]['title']);
+                    var s = '<tr class="blog_headline"><td><div><div class="blog_title" id="title" style="width:30%; display: inline-block;"><a href="../signalIndex/'+userId+'_'+result['result'][i]['code']+'">'+result['result'][i]['title']+'</a></div><div style="width:42%; display: inline-block;"></div><div id="submintTime" style="width:10%; display: inline-block;">'+result['result'][i]['submitTime']+'</div></div></td></tr>';
+                    $('#blogTable').append(s);
+                }
             }else{
                 layer.msg("error in quer user info");
             }
@@ -56,7 +59,3 @@ window.onload = function() {
     });
 };
 
-
-function addAnimationToBlogList(){
-
-}

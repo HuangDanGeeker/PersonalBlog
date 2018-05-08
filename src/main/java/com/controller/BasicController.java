@@ -1,12 +1,15 @@
 package com.controller;
 
+import com.bean.Blog;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
 
 import java.sql.*;
+import java.util.ArrayList;
 import java.util.HashMap;
+import java.util.List;
 import java.util.Map;
 
 /**
@@ -142,30 +145,29 @@ public class BasicController {
     }
 
     @RequestMapping("/index/{userId}")
-    public String changeUserInfo(@PathVariable("userId") String userId){
-
-
+    public String userIndex(@PathVariable("userId") String userId){
         return "index";
+    }
+    @RequestMapping("/signalIndex/{code}")
+    public String signalIndex(@PathVariable("code") String userId){
+        return "index_blog";
     }
     @RequestMapping("/queryBlogInfo/{userId}")
     @ResponseBody
     public Map queryBlogInfo(@PathVariable("userId") String userId){
 
         Map<String, Object> result = new HashMap<String, Object>(5);
-        Map<String, Object> item = new HashMap<String, Object>(1);
         try {
             Statement statement = conn.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from blog_"+userId+";");
-
+            List list = new ArrayList<Blog>(10);
+            Blog item;
             while(resultSet.next()){
-                item.put("code", resultSet.getString(1));
-                item.put("title", resultSet.getString(2));
-                item.put("content", resultSet.getString(3));
-                item.put("submitTime", resultSet.getString(4));
-                result.put((String)item.get("code"), item);
-                item = new HashMap<String, Object>(4);
+                item = new Blog(resultSet.getString(1), resultSet.getString(2), resultSet.getString(3), resultSet.getString(4));
+                list.add(item);
             }
             result.put("status", "success");
+            result.put("result", list);
             return result;
         } catch (SQLException e) {
             e.printStackTrace();
@@ -198,4 +200,8 @@ public class BasicController {
         return result;
     }
 
+
+
 }
+
+
