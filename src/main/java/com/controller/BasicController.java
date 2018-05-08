@@ -147,7 +147,6 @@ public class BasicController {
 
         return "index";
     }
-
     @RequestMapping("/queryBlogInfo/{userId}")
     @ResponseBody
     public Map queryBlogInfo(@PathVariable("userId") String userId){
@@ -166,7 +165,31 @@ public class BasicController {
                 result.put((String)item.get("code"), item);
                 item = new HashMap<String, Object>(4);
             }
-            item.put("status", "success");
+            result.put("status", "success");
+            return result;
+        } catch (SQLException e) {
+            e.printStackTrace();
+        }
+        result.put("status", "failure");
+        return result;
+    }
+
+    @RequestMapping("/queryBlogInfo/{userId}/{blogCode}")
+    @ResponseBody
+    public Map queryBlogInfo(@PathVariable("userId") String userId, @PathVariable("blogCode") String blogCode){
+
+        Map<String, Object> result = new HashMap<String, Object>(6);
+        try {
+            Statement statement = conn.createStatement();
+            ResultSet resultSet = statement.executeQuery("select * from blog_"+userId+" where code='"+blogCode+"';");
+
+            if(resultSet.next()){
+                result.put("code", resultSet.getString(1));
+                result.put("title", resultSet.getString(2));
+                result.put("content", resultSet.getString(3));
+                result.put("submitTime", resultSet.getString(4));
+            }
+            result.put("status", "success");
             return result;
         } catch (SQLException e) {
             e.printStackTrace();

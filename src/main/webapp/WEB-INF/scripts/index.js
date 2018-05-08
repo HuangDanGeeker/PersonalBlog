@@ -8,7 +8,7 @@ window.onload = function() {
     $('#indexPageLink').attr('href', "../blog/index/"+userId);
     //请求用户的基本信息
     $.ajax({
-        url:"http://localhost:8080/MyBlog/queryUserInfo/"+"123",
+        url:"http://localhost:8080/MyBlog/queryUserInfo/"+userId,
         dataType:'jsonp',
         processData: true,
         typece:'put',
@@ -32,7 +32,7 @@ window.onload = function() {
                 $("#profile-id").text(result.id);
                 $("#profile-introduction").text(result.introduction);
             }else{
-                layer.msg("error in quer user info");
+                layer.msg("error in query user info");
             }
         }
     });
@@ -47,13 +47,6 @@ window.onload = function() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
-                $("#profile-pic").attr("src", result.pic);
-                $("#profile-name").text(result.name);
-                $("#profile-qqNum").val(result.qqNum);
-                $("#profile-email").val(result.email);
-                $("#profile-address").val(result.address);
-                $("#profile-id").text(result.id);
-                $("#profile-introduction").text(result.introduction);
 
                 addAnimationToBlogList();
             }else{
