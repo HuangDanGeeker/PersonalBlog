@@ -62,9 +62,9 @@ function showCreateBlogModal(){
 function submitBlog(){
     var blogTitle = $('#blogTitle').val();
     var blogContent = $('#blogContent').val();
-
+    var code = escape(blogTitle).replace(eval('/%/g'),'a');
     $.ajax({
-        url:"http://localhost:8080/MyBlog/submitBlog/"+userId+"/"+blogTitle+"/"+blogContent,
+        url:"http://localhost:8080/MyBlog/submitBlog/"+userId+"/"+code+"/"+blogTitle+"/"+blogContent,
         dataType:'jsonp',
         processData: true,
         typece:'put',

@@ -153,17 +153,21 @@ public class BasicController {
     public Map queryBlogInfo(@PathVariable("userId") String userId){
 
         Map<String, Object> result = new HashMap<String, Object>(5);
+        Map<String, Object> item = new HashMap<String, Object>(1);
         try {
             Statement statement = conn.createStatement();
             ResultSet resultSet = statement.executeQuery("select * from blog_"+userId+";");
-            if( resultSet.next()){
-                result.put("status", "success");
-                result.put("title", resultSet.getString(1));
-                result.put("content", resultSet.getString(2));
-                result.put("submitTime", resultSet.getString(3));
-                return result;
-            }
 
+            while(resultSet.next()){
+                item.put("code", resultSet.getString(1));
+                item.put("title", resultSet.getString(2));
+                item.put("content", resultSet.getString(3));
+                item.put("submitTime", resultSet.getString(4));
+                result.put((String)item.get("code"), item);
+                item = new HashMap<String, Object>(4);
+            }
+            item.put("status", "success");
+            return result;
         } catch (SQLException e) {
             e.printStackTrace();
         }
