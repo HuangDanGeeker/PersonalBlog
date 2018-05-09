@@ -638,3 +638,21 @@ ul.sublist li a:hover {
 .flex-control-nav {
 	display:none;
 }
+
+
+#profile-name{
+	font-family: 'OstrichSansBlack';
+	margin-left:25px;
+	font-size:20px;
+	color:#fff;
+	line-height:2;
+	padding:5px 0 0px 0px
+}
+#profile-id{
+	font-family: 'OstrichSansBlack';
+	margin-left:25px;
+	font-size:20px;
+	color:#fff;
+	line-height:2;
+	padding:5px 0 0px 0px
+}
