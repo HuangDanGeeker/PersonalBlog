@@ -34,12 +34,13 @@ function login() {
 function regist() {
     var registName = $('#registName').val();
     var registPasswd = $('#registPasswd').val();
-    var registBirthday= $('#registBirthday').val();
-    var registPhone = $('#registPhone').val();
+    var registQQNum = $('#registQQNum').val();
     var registAddress = $('#registAddress').val();
+    var registPhone = $('#registPhone').val();
+    var registEmail= $('#registEmail').val();
 
     $.ajax({
-        url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registBirthday+"/"+registPhone+"/"+registAddress,
+        url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registQQNum+"/"+registAddress,
         dataType:'jsonp',
         processData: true,
         type:'put',
