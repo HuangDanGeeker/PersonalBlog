@@ -209,7 +209,7 @@ public class BasicController {
 
     @RequestMapping("/regist/{registName}/{registPasswd}/{registQQNum}/{registPhone}/{registEmail}/{registAddress}")
     @ResponseBody
-    public Map<String, String> regist(@PathVariable("registName") String registName, @PathVariable("registPasswd") String registPasswd, @PathVariable("reigistQQNum") String registQQNum, @PathVariable("reigstPhone") String registPhone, @PathVariable("registEmail") String registEmail, @PathVariable("registAddress") String registAddress){
+    public Map<String, String> regist(@PathVariable("registName") String registName, @PathVariable("registPasswd") String registPasswd, @PathVariable("registQQNum") String registQQNum, @PathVariable("registPhone") String registPhone, @PathVariable("registEmail") String registEmail, @PathVariable("registAddress") String registAddress){
         System.out.println("regist");
         Map result = new HashMap<String, String>();
         Integer registNo = 1;
@@ -217,17 +217,21 @@ public class BasicController {
         try {
             Statement statement = conn.createStatement();
             ResultSet resultSet = statement.executeQuery("select id from id_set");
+            resultSet.next();
             String noString = resultSet.getString(1);
             registNo = Integer.valueOf(noString);
-            statement.executeUpdate("update id_set set id='"+registNo+"';'");
-            statement.executeUpdate("INSERT INTO `user`(`id`, `email`, `phone`, `qqNum`, `introduction`, `name`, `password`, `pic`, `address`) VALUES ('"+registNo+"', "+registEmail+"', '"+registPhone+"', '"+registQQNum+"', '','"+registName+"', '"+registPasswd+"', '../images/profilePic/1.jpg', '"+registAddress+"');");
-            statement.executeUpdate("create table blog_"+registName+"(code varchar(40) NOT NULL, title varchar(30) DEFAULT NULL, content varchar(40) DEFAULT NULL, submitTime datetime DEFAULT NULL)");
-            result.put("loginStatus", "success");
+            result.put("registNo", registNo);
+            statement.executeUpdate("INSERT INTO `user` VALUES ('"+registNo+"', '"+registEmail+"', '"+registPhone+"', '"+registQQNum+"', '','"+registName+"', '"+registPasswd+"', '../images/profilePic/1.jpg', '"+registAddress+"');");
+            statement.executeUpdate("create table blog_"+registNo+"(code varchar(40) NOT NULL, title varchar(30) DEFAULT NULL, content varchar(40) DEFAULT NULL, submitTime datetime DEFAULT NULL)");
+            registNo ++;
+            statement.executeUpdate("update id_set set id='"+registNo+"';");
+            result.put("registStatus", "success");
             return result;
         } catch (SQLException e) {
             e.printStackTrace();
         }
         result.put("registStatus", "failure");
+        result.put("reasion", "your input is not valid");
         return result;
     }
 

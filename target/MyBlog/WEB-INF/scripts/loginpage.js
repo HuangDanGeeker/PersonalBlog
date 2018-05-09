@@ -42,8 +42,6 @@ function regist() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var registResult = eval("("+XMLHttpRequest.responseText+")");
             if(registResult.registStatus == "success"){
-                $.cookie("userName", registName);
-                $.cookie("userName", registPasswd);
                 signin();
                 $('#userName').val(registName);
                 $('#userPasswd').val(registPasswd);
@@ -51,7 +49,7 @@ function regist() {
                 $('#infoModal .modal-title').text("Regist Success");
                 $('#infoModal').modal('show');
             }else{
-                $('#infoModal .modal-body').html(result.reason);
+                $('#infoModal .modal-body').html(registResult.reason);
                 $('#infoModal .modal-title').text("Regist Error");
                 $('#infoModal').modal('show');
             }
