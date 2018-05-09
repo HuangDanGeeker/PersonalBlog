@@ -1,0 +1,33 @@
+body{
+    font-size: 18px;
+    background: url("../images/8d09c4f535c66ea69f2d9b2ade0887a4.jpg") no-repeat;
+    width: 100%;
+    height:auto;
+    background-size: 100%;
+}
+
+#headline{
+    background-color: rgba(100, 149, 237, 0.8);
+    height: 50px;
+    vertical-align: middle;
+}
+
+
+.headline-btn{
+    opacity: 1;
+    margin-top:8px;
+    margin-right:6px;
+}
+
+.testDiv{
+    background-color: red;
+    height: 50px;
+    width: 10%;
+    float:left;
+    margin-left: 10px;
+    margin-right: auto;
+    text-align: center;
+    line-height: 50px;
+}
+
+

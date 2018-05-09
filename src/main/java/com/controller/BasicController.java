@@ -201,6 +201,13 @@ public class BasicController {
     }
 
 
+    @RequestMapping("/loginpage")
+    public String queryBlogInfo(){
+
+        return "login";
+    }
+
+
 
 }
 
