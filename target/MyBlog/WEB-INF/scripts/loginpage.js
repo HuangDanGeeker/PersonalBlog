@@ -1,7 +1,3 @@
-/**
- * Created by HuangDanGeeker on 2018/3/17.
- */
-
 window.onload = function () {
 
 }
@@ -9,9 +5,6 @@ window.onload = function () {
 function login() {
     var userNo = $('#userNo').val();
     var userPasswd = $('#userPasswd').val();
-    console.log("value : " + userName +  "  " + userPasswd);
-
-    //TODO 记住 -> 用户名和密码
     $.ajax({
         url:"http://localhost:8080/MyBlog/login/"+userNo+"/"+userPasswd,
         dataType:'jsonp',
@@ -40,7 +33,7 @@ function regist() {
     var registEmail= $('#registEmail').val();
 
     $.ajax({
-        url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registQQNum+"/"+registAddress,
+        url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registQQNum+"/"+registPhone+"/"+registEmail+"/"+registAddress,
         dataType:'jsonp',
         processData: true,
         type:'put',
