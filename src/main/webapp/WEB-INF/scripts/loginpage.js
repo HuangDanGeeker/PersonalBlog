@@ -16,7 +16,7 @@ function login() {
             var registResult = eval("("+XMLHttpRequest.responseText+")");
             if(registResult.loginStatus == "success"){
                 //redirect
-                window.location.href="../profile/"+userNo;
+                window.location.href="./profile/"+userNo;
             }else{
                 $('#infoModal .modal-body').html('登录失败<br>请检查您的账号和密码');
                 $('#infoModal .modal-title').html("Login Error");
@@ -36,7 +36,7 @@ function regist() {
         url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registQQNum+"/"+registPhone+"/"+registEmail+"/"+registAddress,
         dataType:'jsonp',
         processData: true,
-        type:'put',
+        type:'get',
         success:function(){
         },
         error:function(XMLHttpRequest, textStatus, errorThrown) {
