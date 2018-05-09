@@ -4,7 +4,8 @@
     <meta charset="UTF-8">
     <title>个人主页</title>
     <meta name="viewport" content="width=device-width,initial-scale=1">
-    <link rel="stylesheet" href="../styles/style.css" media="screen" />
+    <link rel="stylesheet" href="../styles/index_blog.css" media="screen" />
+    <link rel="stylesheet" href="../styles/index.css" media="screen" />
     <link rel="stylesheet" href="../styles/media-queries.css" />
     <link rel="stylesheet" href="../styles/flex-slider/flexslider.css" type="text/css" media="screen" />
     <link href="../styles/prettyPhoto.css" rel="stylesheet" type="text/css" media="screen" />
@@ -39,45 +40,11 @@
     <div id="container">
         <!-- page container -->
         <div class="page" id="about">
-            <h3 class="page_title"> 个人简历</h3>
-            <div class="page_content"><p id="profile-introduction"></p> </div>
-        </div>
-        <div class="page" id="portfolio">
-            <h3 class="page_title"> 我的blog</h3>
-            <div class="page_content">
-                <table border="0" id="blogTable">
-                    <tr class="blog_headline">
-                        <td>
-                            <div>
-                                <div class="blog_title" id="title" style="width:30%; display: inline-block;"><a href="../signalIndex/123_123">title</a></div>
-                                <div style="width:42%; display: inline-block;"></div>
-                                <div id="submintTime" style="width:10%; display: inline-block;">sdaad </div>
-                            </div>
-                        </td>
-                    </tr>
-                </table>
-            </div>
-        </div>
-
-        <div class="page" id="contact">
-            <!-- page contact -->
-            <h3 class="page_title"> get in touch with me</h3>
-            <div class="page_content">
-                <fieldset id="contact_form">
-                    <div id="msgs"> </div>
-                    <form id="cform" name="cform" method="post" action="">
-                        <input type="text" id="profile-qqNum" value="qq Num" disabled="disabled" />
-                        <input type="text" id="profile-email" value="email" disabled="disabled" />
-                        <input type="text" id="profile-address"value="address" disabled="disabled" />
-                    </form>
-                </fieldset>
-                <div class="clear"> </div>
-            </div>
+            <h3 class="page_title" id="blog_title"></h3>
+            <h3 class="page_submitTime" id="blog_submitTime"></h3>
+            <div class="page_content" id="blog_content"></div>
         </div>
     </div>
 </div>
-<a class="gotop" href="#top">Top</a>
-
-
 </body>
 </html>

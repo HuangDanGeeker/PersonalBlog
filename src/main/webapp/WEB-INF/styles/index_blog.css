@@ -1,0 +1,18 @@
+div#container h3.page_title {
+	font-family: 'OstrichSansBlack';
+	margin-left:25px;
+	font-size:35px;
+	color:#fff;
+	line-height:2;
+	padding:5px 0 0px 0px
+}
+.page_submitTime{
+	font-family: 'OstrichSansBlack';
+	margin-left:25px;
+	font-size:20px;
+	color:#fff;
+	border-bottom:1px solid #fff;
+	text-shadow:1px 1px 2px #185477;
+	line-height:2;
+	padding:5px 0 0px 0px
+}

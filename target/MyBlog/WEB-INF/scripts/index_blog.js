@@ -52,10 +52,11 @@ window.onload = function() {
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
             if(result.status == "success"){
-                $("#profile-pic").attr("src", result.pic);
-
+                $("#blog_title").html(result.title);
+                $("#blog_content").html(result.content);
+                $("#blog_submitTime").html(result.submitTime);
             }else{
-                layer.msg("error in quer user info");
+                layer.msg("error in query signal user info");
             }
         }
     });
