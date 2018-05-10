@@ -3,7 +3,7 @@ var userId;
 window.onload = function() {
     var location = new String(window.location);
     userId = new String(location).substr(new String(location).lastIndexOf('/')+1);
-    $('#indexPageLink').attr('href', "../blog/index/"+userId);
+    $('#indexPageLink').attr('href', "../index/"+userId);
     $.ajax({
         url:"http://localhost:8080/MyBlog/queryUserInfo/"+"123",
         dataType:'jsonp',
