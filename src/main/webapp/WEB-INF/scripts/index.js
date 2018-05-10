@@ -49,7 +49,7 @@ window.onload = function() {
             if(result.status == "success"){
                 for(var i =0; i < result['result'].length; i++ ){
                     console.log(result['result'][i]['title']);
-                    var s = '<tr class="blog_headline"><td><div><div class="blog_title" id="title" style="width:30%; display: inline-block;"><a href="../signalIndex/'+userId+'_'+result['result'][i]['code']+'">'+result['result'][i]['title']+'</a></div><div style="width:42%; display: inline-block;"></div><div id="submintTime" style="width:10%; display: inline-block;">'+result['result'][i]['submitTime']+'</div></div></td></tr>';
+                    var s = '<tr class="blog_headline"><td><div style="width: 300px;"><div class="blog_title" id="title" style="width:30%; display: inline-block; font-size: 20px"><a href="../signalIndex/'+userId+'_'+result['result'][i]['code']+'">'+result['result'][i]['title']+'</a></div><div style="width:42%; display: inline-block;"></div><div id="submintTime" style="width:60px; display: inline-block;">'+result['result'][i]['submitTime']+'</div></div></td></tr>';
                     $('#blogTable').append(s);
                 }
             }else{

@@ -20,6 +20,7 @@ window.onload = function() {
                 $('#user-QQ').val(result.qqNum);
                 $('#user-intro').val(result.introduction);
                 $('#userName').text("    "+result.id + " / " +result.name)
+                $('#uploadForm').attr("action", "/MyBlog/photoUpload/"+result.id);
             }else{
                 layer.msg("error in quer user info");
             }

@@ -235,6 +235,14 @@ public class BasicController {
         return result;
     }
 
+
+    @RequestMapping("/upload")
+    public String upload(){
+        return "upload";
+    }
+
+
+
 }
 
 
