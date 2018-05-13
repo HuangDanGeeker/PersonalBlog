@@ -63,7 +63,8 @@ function requireAfirmCode() {
         "token":"6717f98330bd6972f50c66d9423101cb",
         "appid":"bd3bd0259f76467a8b991165dabdcb3b",
         "templateid":"322051",
-        "mobile":registPhone
+        "mobile":registPhone,
+        'Access-Control-Allow-Origin': '*',
     };
 
     $.ajax({
@@ -71,6 +72,7 @@ function requireAfirmCode() {
         url: "https://open.ucpaas.com/ol/sms/sendsms",
         contentType: "application/json; charset=utf-8",
         data: JSON.stringify(jsonData),
+        'Access-Control-Allow-Origin': '*',
         dataType: "json",
         success: function (message) {
             if (message > 0) {
