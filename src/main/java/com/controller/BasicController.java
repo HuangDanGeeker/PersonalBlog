@@ -1,6 +1,7 @@
 package com.controller;
 
 import com.bean.Blog;
+import com.ucpaas.restDemo.client.JsonReqClient;
 import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
@@ -23,7 +24,8 @@ public class BasicController {
     private static final String username = "root";
     private static final String password = "";
     private static Connection conn = null;
-
+    private JsonReqClient ucpassClient = new JsonReqClient();
+    private static final String AFIRM_CODE = "10086";
     static
     {
         try
@@ -207,12 +209,17 @@ public class BasicController {
         return result;
     }
 
-    @RequestMapping("/regist/{registName}/{registPasswd}/{registQQNum}/{registPhone}/{registEmail}/{registAddress}")
+    @RequestMapping("/regist/{registName}/{registPasswd}/{registQQNum}/{registPhone}/{registEmail}/{registAddress}/{afirmCode}")
     @ResponseBody
-    public Map<String, String> regist(@PathVariable("registName") String registName, @PathVariable("registPasswd") String registPasswd, @PathVariable("registQQNum") String registQQNum, @PathVariable("registPhone") String registPhone, @PathVariable("registEmail") String registEmail, @PathVariable("registAddress") String registAddress){
+    public Map<String, String> regist(@PathVariable("registName") String registName, @PathVariable("registPasswd") String registPasswd, @PathVariable("registQQNum") String registQQNum, @PathVariable("registPhone") String registPhone, @PathVariable("registEmail") String registEmail, @PathVariable("registAddress") String registAddress, @PathVariable("affirmCode") String afirmCode){
         System.out.println("regist");
         Map result = new HashMap<String, String>();
         Integer registNo = 1;
+        if(!afirmCode.equals(AFIRM_CODE)){
+            result.put("registStatus", "failure");
+            result.put("reasion", "your afirmCode is not valid");
+            return result;
+        }
         // you should use db_transcation to ensure all the sqls below executed successfully
         try {
             Statement statement = conn.createStatement();
@@ -232,6 +239,16 @@ public class BasicController {
         }
         result.put("registStatus", "failure");
         result.put("reasion", "your input is not valid");
+        return result;
+    }
+
+    @RequestMapping("/queryAfirmCode/{registPhone}")
+    @ResponseBody
+    public Map<String, String> queryAfirmCode(@PathVariable("registPhone") String phone){
+        System.out.println("queryAfirmCode");
+        Map result = new HashMap<String, String>();
+        ucpassClient.sendSms(AFIRM_CODE, phone);
+        result.put("queryAfirmCodeStatus", "success");
         return result;
     }
 

@@ -31,9 +31,10 @@ function regist() {
     var registAddress = $('#registAddress').val();
     var registPhone = $('#registPhone').val();
     var registEmail= $('#registEmail').val();
+    var afirmCode = $('#registAfirmCode').val();
 
     $.ajax({
-        url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registQQNum+"/"+registPhone+"/"+registEmail+"/"+registAddress,
+        url:"http://localhost:8080/MyBlog/regist/"+registName+"/"+registPasswd+"/"+registQQNum+"/"+registPhone+"/"+registEmail+"/"+registAddress+"/"+afirmCode,
         dataType:'jsonp',
         processData: true,
         type:'get',
@@ -58,31 +59,26 @@ function regist() {
 
 function requireAfirmCode() {
     var registPhone = $('#registPhone').val();
-    var jsonData = {
-        "sid":"fbda3ff9e10f4c911680e7595eb61191",
-        "token":"6717f98330bd6972f50c66d9423101cb",
-        "appid":"bd3bd0259f76467a8b991165dabdcb3b",
-        "templateid":"322051",
-        "mobile":registPhone,
-        'Access-Control-Allow-Origin': '*',
-    };
 
     $.ajax({
-        type: "POST",
-        url: "https://open.ucpaas.com/ol/sms/sendsms",
-        contentType: "application/json; charset=utf-8",
-        data: JSON.stringify(jsonData),
-        'Access-Control-Allow-Origin': '*',
-        dataType: "json",
-        success: function (message) {
-            if (message > 0) {
-                alert("请求已提交！我们会尽快与您取得联系");
-            }
+        url:"http://localhost:8080/MyBlog/queryAfirmCode/"+registPhone,
+        dataType:'jsonp',
+        processData: true,
+        type:'get',
+        success:function(){
         },
-        error: function (message) {
-            alert("提交数据失败！");
-        }
-    });
+        error:function(XMLHttpRequest, textStatus, errorThrown) {
+            var registResult = eval("("+XMLHttpRequest.responseText+")");
+            if(registResult.queryAfirmCodeStatus == "success"){
+                $('#infoModal .modal-body').html("验证码发送成功");
+                $('#infoModal .modal-title').html("query Success<br>请检查您的手机短信");
+                $('#infoModal').modal('show');
+            }else{
+                $('#infoModal .modal-body').html("验证码发送失败");
+                $('#infoModal .modal-title').html("query failed<br>请再次尝试");
+                $('#infoModal').modal('show');
+            }
+        }});
 }
 
 

@@ -23,7 +23,7 @@ public class JsonReqClient extends AbsRestClient {
 		this.mobile = mobile;
 	}
 
-	public String mySendSms(String param, String mobile){
+	public String sendSms(String param, String mobile){
 		 return sendSms(sid, token, appid, templateid, param, mobile, uid);
 	}
 
