@@ -2,9 +2,7 @@ package com.ucpaas.restDemo;
 
 import org.apache.commons.lang.StringUtils;
 
-import java.io.IOException;
-import java.io.InputStream;
-import java.io.InputStreamReader;
+import java.io.*;
 import java.util.Iterator;
 import java.util.Properties;
 
@@ -31,11 +29,9 @@ public class SysConfig {
 	public void loadConfigProps() {
 		InputStream is = null;
 		try {
-			is = getClass().getResourceAsStream(
-					"E:\\JavaLearn\\IntelliJ\\MyBlog\\src\\main\\resources\\configs\\config.properties");
-			if (is == null) {
-				is = getClass().getResourceAsStream("E:\\JavaLearn\\IntelliJ\\MyBlog\\src\\main\\resources\\configs\\config.properties");
-			}
+
+			File ucpassConfigFile = new File("E:\\JavaLearn\\IntelliJ\\MyBlog\\src\\main\\resources\\configs\\config.properties");
+			is = new FileInputStream(ucpassConfigFile);
 			InputStreamReader reader = new InputStreamReader(is, "UTF-8");
 			props.load(reader);
 			Iterator<String> iter = props.stringPropertyNames().iterator();

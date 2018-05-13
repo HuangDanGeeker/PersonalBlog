@@ -83,69 +83,71 @@ public class RestTest {
 	 * @throws IOException 
 	 * @method main
 	 */
-	public static void main(String[] args) throws IOException{
-		
-		System.out.println("请输入方法对应的数字(例如1),Enter键结束:");
-		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
-		
-		String methodNumber = br.readLine();
-		
-		if (StringUtils.isBlank(methodNumber)){
-			System.out.println("请输入正确的数字，不可为空");
-			return;
-		}
-		
-		if (methodNumber.equals("1")) {  //指定模板单发
-			String sid = "";
-			String token = "";
-			String appid = "";
-			String templateid = "";
-			String param = "";
-			String mobile = "";
-			String uid = "";
-			testSendSms(sid, token, appid, templateid, param, mobile, uid);
-		} else if (methodNumber.equals("2")) { //指定模板群发
-			String sid = "";
-			String token = "";
-			String appid = "";
-			String templateid = "";
-			String param = "";
-			String mobile = "";
-			String uid = "";
-			testSendSmsBatch(sid, token, appid, templateid, param, mobile, uid);
-		} else if (methodNumber.equals("3")) {  //增加模板
-			String sid = "";
-			String token = "";
-			String appid = "";
-			String type = "";
-			String template_name = "";
-			String autograph = "";
-			String content = "";
-			testAddSmsTemplate(sid, token, appid, type, template_name, autograph, content);
-		} else if (methodNumber.equals("4")) {  //查询模板
-			String sid = "";
-			String token = "";
-			String appid = "";
-			String templateid = "";
-			String page_num = "";
-			String page_size = "";
-			testGetSmsTemplate(sid, token, appid, templateid, page_num, page_size);
-		} else if (methodNumber.equals("5")) {  //编辑模板
-			String sid = "";
-			String token = "";
-			String appid = "";
-			String templateid = "";
-			String type = "";
-			String template_name = "";
-			String autograph = "";
-			String content = "";
-			testEditSmsTemplate(sid, token, appid, templateid, type, template_name, autograph, content);
-		} else if (methodNumber.equals("6")) {  //删除模板
-			String sid = "";
-			String token = "";
-			String appid = "";
-			String templateid = "";
-			testDeleterSmsTemplate(sid, token, appid, templateid);
-		} 	
-	}
+//	public static void main(String[] args) throws IOException{
+//
+//		System.out.println("请输入方法对应的数字(例如1),Enter键结束:");
+//		BufferedReader br = new BufferedReader(new InputStreamReader(System.in));
+//
+//		String methodNumber = br.readLine();
+//
+//		if (StringUtils.isBlank(methodNumber)){
+//			System.out.println("请输入正确的数字，不可为空");
+//			return;
+//		}
+//
+//		if (methodNumber.equals("1")) {  //指定模板单发
+//			String sid = "fbda3ff9e10f4c911680e7595eb61191";
+//			String token = "6717f98330bd6972f50c66d9423101cb";
+//			String appid = "bd3bd0259f76467a8b991165dabdcb3b";
+//			String templateid = "322051";
+//			String param = "123321";
+//			String mobile = "18373151462";
+//			String uid = "";
+//			testSendSms(sid, token, appid, templateid, param, mobile, uid);
+//		} else if (methodNumber.equals("2")) { //指定模板群发
+//			String sid = "";
+//			String token = "";
+//			String appid = "";
+//			String templateid = "";
+//			String param = "";
+//			String mobile = "";
+//			String uid = "";
+//			testSendSmsBatch(sid, token, appid, templateid, param, mobile, uid);
+//		} else if (methodNumber.equals("3")) {  //增加模板
+//			String sid = "";
+//			String token = "";
+//			String appid = "";
+//			String type = "";
+//			String template_name = "";
+//			String autograph = "";
+//			String content = "";
+//			testAddSmsTemplate(sid, token, appid, type, template_name, autograph, content);
+//		} else if (methodNumber.equals("4")) {  //查询模板
+//			String sid = "";
+//			String token = "";
+//			String appid = "";
+//			String templateid = "";
+//			String page_num = "";
+//			String page_size = "";
+//			testGetSmsTemplate(sid, token, appid, templateid, page_num, page_size);
+//		} else if (methodNumber.equals("5")) {  //编辑模板
+//			String sid = "";
+//			String token = "";
+//			String appid = "";
+//			String templateid = "";
+//			String type = "";
+//			String template_name = "";
+//			String autograph = "";
+//			String content = "";
+//			testEditSmsTemplate(sid, token, appid, templateid, type, template_name, autograph, content);
+//		} else if (methodNumber.equals("6")) {  //删除模板
+//			String sid = "";
+//			String token = "";
+//			String appid = "";
+//			String templateid = "";
+//			testDeleterSmsTemplate(sid, token, appid, templateid);
+//		}
+//	}
+
+
 }

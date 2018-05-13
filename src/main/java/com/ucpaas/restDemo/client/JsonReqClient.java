@@ -6,7 +6,28 @@ import com.alibaba.fastjson.JSONObject;
 import com.ucpaas.restDemo.HttpClientUtil;
 
 public class JsonReqClient extends AbsRestClient {
-	
+
+			String sid = "fbda3ff9e10f4c911680e7595eb61191";
+			String token = "6717f98330bd6972f50c66d9423101cb";
+			String appid = "bd3bd0259f76467a8b991165dabdcb3b";
+			String templateid = "322051";
+			String param = "123321";
+			String mobile = "";
+			String uid = "";
+
+	public String getMobile() {
+		return mobile;
+	}
+
+	public void setMobile(String mobile) {
+		this.mobile = mobile;
+	}
+
+	public String mySendSms(String param, String mobile){
+		 return sendSms(sid, token, appid, templateid, param, mobile, uid);
+	}
+
+
 	@Override
 	public String sendSms(String sid, String token, String appid, String templateid, String param, String mobile, 
 			String uid) {
