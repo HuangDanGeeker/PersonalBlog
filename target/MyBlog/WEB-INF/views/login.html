@@ -66,6 +66,12 @@
             <label for="registAddress">联系地址</label>
             <input  type="text" class="form-control" id="registAddress" name="registAddress" placeholder="请输入密码" />
         </div>
+        <div class="form-group">
+            <div class="col-sm-7">
+                <input  type="text" class="form-control" id="registAfirmCode" name="registAfirmCode" placeholder="请输入验证码" />
+            </div>
+            <button type="button" class="btn btn-primary " onclick="requireAfirmCode()">获取验证码</button>
+        </div>
         <div class="text-center">
             <button type="button" class="btn btn-primary" onclick="regist()">确认</button>
         </div>

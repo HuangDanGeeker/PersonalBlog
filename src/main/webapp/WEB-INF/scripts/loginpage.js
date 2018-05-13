@@ -56,6 +56,33 @@ function regist() {
         }});
 }
 
+function requireAfirmCode() {
+    var registPhone = $('#registPhone').val();
+    var jsonData = {
+        "sid":"fbda3ff9e10f4c911680e7595eb61191",
+        "token":"6717f98330bd6972f50c66d9423101cb",
+        "appid":"bd3bd0259f76467a8b991165dabdcb3b",
+        "templateid":"322051",
+        "mobile":registPhone
+    };
+
+    $.ajax({
+        type: "POST",
+        url: "https://open.ucpaas.com/ol/sms/sendsms",
+        contentType: "application/json; charset=utf-8",
+        data: JSON.stringify(jsonData),
+        dataType: "json",
+        success: function (message) {
+            if (message > 0) {
+                alert("请求已提交！我们会尽快与您取得联系");
+            }
+        },
+        error: function (message) {
+            alert("提交数据失败！");
+        }
+    });
+}
+
 
 function signin(){
     $('#loginPage').show();
