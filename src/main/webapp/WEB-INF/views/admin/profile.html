@@ -51,9 +51,8 @@
   <div class="admin-sidebar">
     <ul class="am-list admin-sidebar-list">
       <li><a id="indexPageLink"><span class="am-icon-home"></span>博客首页</a></li>
-      <li><a href="#"><span class="am-icon-sign-out"></span> 个人资料</a></li>
       <li onclick="showCreateBlogModal()"><a href="#"><span class="am-icon-sign-out"></span> 创建博客</a></li>
-      <li><a href="../blog/login"><span class="am-icon-sign-out"></span> 退出</a></li>
+      <li><a href="../loginpage"><span class="am-icon-sign-out"></span> 退出</a></li>
     </ul>
     <div class="am-panel am-panel-default admin-sidebar-panel">
       <div class="am-panel-bd">
@@ -76,12 +75,12 @@
           <div class="am-panel-bd">
             <div class="am-g">
               <div class="am-u-md-4">
-                <img class="am-img-circle am-img-thumbnail" src="http://amui.qiniudn.com/bw-2014-06-19.jpg?imageView/1/w/1000/h/1000/q/80" alt="">
+                <img id="user-pic" style="width: 75px;height: 75px">
               </div>
               <div class="am-u-md-8">
                   <div class="am-form-group">
                     <form id="uploadForm" action="/MyBlog/photoUpload" method="post" enctype="multipart/form-data">
-                      选择文件:<input type="file" name="file" />
+                      选择头像文件:<input type="file" name="file" />
                       <input type="submit" class="am-btn am-btn-primary am-btn-xs" value="上传"/>
                     </form>
                   </div>

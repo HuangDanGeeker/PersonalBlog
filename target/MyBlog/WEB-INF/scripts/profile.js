@@ -18,6 +18,7 @@ window.onload = function() {
                 $('#user-email').val(result.email);
                 $('#user-phone').val(result.phone);
                 $('#user-QQ').val(result.qqNum);
+                $('#user-pic').attr("src",result.pic);
                 $('#user-intro').val(result.introduction);
                 $('#userName').text("    "+result.id + " / " +result.name)
                 $('#uploadForm').attr("action", "/MyBlog/photoUpload/"+result.id);

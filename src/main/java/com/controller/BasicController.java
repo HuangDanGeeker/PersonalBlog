@@ -210,7 +210,7 @@ public class BasicController {
 
     @RequestMapping("/regist/{registName}/{registPasswd}/{registQQNum}/{registPhone}/{registEmail}/{registAddress}/{afirmCode}")
     @ResponseBody
-    public Map<String, String> regist(@PathVariable("registName") String registName, @PathVariable("registPasswd") String registPasswd, @PathVariable("registQQNum") String registQQNum, @PathVariable("registPhone") String registPhone, @PathVariable("registEmail") String registEmail, @PathVariable("registAddress") String registAddress, @PathVariable("affirmCode") String afirmCode){
+    public Map<String, String> regist(@PathVariable("registName") String registName, @PathVariable("registPasswd") String registPasswd, @PathVariable("registQQNum") String registQQNum, @PathVariable("registPhone") String registPhone, @PathVariable("registEmail") String registEmail, @PathVariable("registAddress") String registAddress, @PathVariable("afirmCode") String afirmCode){
         System.out.println("regist");
         Map result = new HashMap<String, String>();
         Integer registNo = 1;

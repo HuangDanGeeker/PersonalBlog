@@ -38,7 +38,7 @@ window.onload = function() {
     });
     //请求用户的博客信息
     $.ajax({
-        url:"http://localhost:8080/MyBlog/queryBlogInfo/"+"123",
+        url:"http://localhost:8080/MyBlog/queryBlogInfo/"+userId,
         dataType:'jsonp',
         processData: true,
         typece:'put',
