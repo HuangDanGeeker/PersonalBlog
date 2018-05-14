@@ -6,7 +6,6 @@ import org.springframework.stereotype.Controller;
 import org.springframework.web.bind.annotation.PathVariable;
 import org.springframework.web.bind.annotation.RequestMapping;
 import org.springframework.web.bind.annotation.ResponseBody;
-
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -25,7 +24,7 @@ public class BasicController {
     private static final String password = "";
     private static Connection conn = null;
     private JsonReqClient ucpassClient = new JsonReqClient();
-    private static final String AFIRM_CODE = "10086";
+    private static final String AFIRM_CODE = "123321";
     static
     {
         try

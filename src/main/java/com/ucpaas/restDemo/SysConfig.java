@@ -29,7 +29,6 @@ public class SysConfig {
 	public void loadConfigProps() {
 		InputStream is = null;
 		try {
-
 			File ucpassConfigFile = new File("E:\\JavaLearn\\IntelliJ\\MyBlog\\src\\main\\resources\\configs\\config.properties");
 			is = new FileInputStream(ucpassConfigFile);
 			InputStreamReader reader = new InputStreamReader(is, "UTF-8");
