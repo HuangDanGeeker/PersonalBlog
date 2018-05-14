@@ -1,11 +1,11 @@
 package com.controller;
 
+import com.alibaba.fastjson.JSONObject;
 import com.bean.Blog;
 import com.ucpaas.restDemo.client.JsonReqClient;
 import org.springframework.stereotype.Controller;
-import org.springframework.web.bind.annotation.PathVariable;
-import org.springframework.web.bind.annotation.RequestMapping;
-import org.springframework.web.bind.annotation.ResponseBody;
+import org.springframework.web.bind.annotation.*;
+
 import java.sql.*;
 import java.util.ArrayList;
 import java.util.HashMap;
@@ -106,10 +106,15 @@ public class BasicController {
         return result;
     }
 
-    @RequestMapping("/submitBlog/{userId}/{code}/{blogTitle}/{blogContent}")
+    @RequestMapping(value="/submitBlog/{userId}", method= RequestMethod.POST)
     @ResponseBody
-    public Map changeUserInfo(@PathVariable("userId") String userId, @PathVariable("code") String blogCode, @PathVariable("blogTitle") String blogTitle, @PathVariable("blogContent") String blogContent){
-
+    public Map submitBlog(@PathVariable("userId") String userId, @RequestBody Map<String, String> jsonContent){
+        System.out.println(jsonContent.get("code"));
+        System.out.println(jsonContent.get("blogTitle"));
+        System.out.println(jsonContent.get("blogContent"));
+        String blogCode = (String)jsonContent.get("code");
+        String blogTitle = (String)jsonContent.get("blogTitle");
+        String blogContent = (String)jsonContent.get("blogContent").replace("\n", "<br>").replace(" ","&nbsp;");
         Map<String, Object> result = new HashMap<String, Object>(5);
         String sql = "insert into blog_"+userId+" values('"+blogCode+"', '"+blogTitle+"', '"+blogContent+"', CURRENT_TIME());";
         try {
@@ -228,7 +233,7 @@ public class BasicController {
             registNo = Integer.valueOf(noString);
             result.put("registNo", registNo);
             statement.executeUpdate("INSERT INTO `user` VALUES ('"+registNo+"', '"+registEmail+"', '"+registPhone+"', '"+registQQNum+"', '','"+registName+"', '"+registPasswd+"', '../images/profilePic/1.jpg', '"+registAddress+"');");
-            statement.executeUpdate("create table blog_"+registNo+"(code varchar(40) NOT NULL, title varchar(30) DEFAULT NULL, content varchar(40) DEFAULT NULL, submitTime datetime DEFAULT NULL)");
+            statement.executeUpdate("create table blog_"+registNo+"(code varchar(40) NOT NULL, title varchar(30) DEFAULT NULL, content LONGTEXT DEFAULT NULL, submitTime datetime DEFAULT NULL)");
             registNo ++;
             statement.executeUpdate("update id_set set id='"+registNo+"';");
             result.put("registStatus", "success");

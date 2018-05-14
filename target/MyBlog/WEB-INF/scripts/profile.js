@@ -40,8 +40,8 @@ function changeInfo(){
         url:"http://localhost:8080/MyBlog/changeUserInfo/"+userId+"/"+name+"/"+email+"/"+phone+"/"+qqNum+"/"+introduction,
         dataType:'jsonp',
         processData: true,
-        typece:'put',
-        sucss:function(){
+        type:'put',
+        success:function(){
         },
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
@@ -65,12 +65,19 @@ function submitBlog(){
     var blogTitle = $('#blogTitle').val();
     var blogContent = $('#blogContent').val();
     var code = escape(blogTitle).replace(eval('/%/g'),'a');
+    $('#blogModal').modal('hide');
+    var data = {
+        'code':code,
+        'blogTitle': blogTitle,
+        'blogContent': blogContent
+    };
     $.ajax({
-        url:"http://localhost:8080/MyBlog/submitBlog/"+userId+"/"+code+"/"+blogTitle+"/"+blogContent,
-        dataType:'jsonp',
-        processData: true,
-        typece:'put',
-        sucss:function(){
+        type: 'POST',
+        url: "http://localhost:8080/MyBlog/submitBlog/"+userId,
+        dataType: 'text',
+        contentType:'application/json',
+        data:JSON.stringify(data),
+        success:function(data){
         },
         error:function(XMLHttpRequest, textStatus, errorThrown) {
             var result = eval("("+XMLHttpRequest.responseText+")");
