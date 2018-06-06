@@ -8,3 +8,10 @@ create table blog_123 (title varchar(30), content varchar(40), submitTime DATETI
 
 
 -- 数据操作
+drop table blog_12309;
+CREATE TABLE `blog_12309` (
+  `code` varchar(40) NOT NULL,
+  `title` varchar(30) DEFAULT NULL,
+  `content` longtext DEFAULT NULL,
+  `submitTime` datetime DEFAULT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8;

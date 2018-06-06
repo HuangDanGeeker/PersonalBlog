@@ -76,6 +76,7 @@ function submitBlog(){
         url: "http://localhost:8080/MyBlog/submitBlog/"+userId,
         dataType: 'text',
         contentType:'application/json',
+        scriptCharset: 'UTF-8',
         data:JSON.stringify(data),
         success:function(data){
         },

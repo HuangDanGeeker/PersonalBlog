@@ -233,7 +233,7 @@ public class BasicController {
             registNo = Integer.valueOf(noString);
             result.put("registNo", registNo);
             statement.executeUpdate("INSERT INTO `user` VALUES ('"+registNo+"', '"+registEmail+"', '"+registPhone+"', '"+registQQNum+"', '','"+registName+"', '"+registPasswd+"', '../images/profilePic/1.jpg', '"+registAddress+"');");
-            statement.executeUpdate("create table blog_"+registNo+"(code varchar(40) NOT NULL, title varchar(30) DEFAULT NULL, content LONGTEXT DEFAULT NULL, submitTime datetime DEFAULT NULL)");
+            statement.executeUpdate("create table blog_"+registNo+"(code varchar(40) NOT NULL, title varchar(30) DEFAULT NULL, content LONGTEXT DEFAULT NULL, submitTime datetime DEFAULT NULL) CHARSET = utf8");
             registNo ++;
             statement.executeUpdate("update id_set set id='"+registNo+"';");
             result.put("registStatus", "success");
