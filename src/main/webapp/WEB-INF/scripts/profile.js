@@ -5,7 +5,7 @@ window.onload = function() {
     userId = new String(location).substr(new String(location).lastIndexOf('/')+1);
     $('#indexPageLink').attr('href', "../index/"+userId);
     $.ajax({
-        url:"http://localhost:8080/MyBlog/queryUserInfo/"+"123",
+        url:"http://localhost:8080/MyBlog/queryUserInfo/"+userId,
         dataType:'jsonp',
         processData: true,
         typece:'put',

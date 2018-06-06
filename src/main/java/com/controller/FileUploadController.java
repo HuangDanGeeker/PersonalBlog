@@ -47,9 +47,8 @@ public class FileUploadController {
     /**
      * 图片文件上传
      */
-    @ResponseBody
     @RequestMapping(value = "/photoUpload/{userId}",method = RequestMethod.POST)
-    public Map photoUpload(@PathVariable String userId,  MultipartFile file, HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IllegalStateException, IOException {
+    public String photoUpload(@PathVariable String userId,  MultipartFile file, HttpServletRequest request, HttpServletResponse response, HttpSession session) throws IllegalStateException, IOException {
         Map<String, Object> result = new HashMap<String, Object>(5);
         String s = request.getParameter("uploadId");
         if (file!=null) {// 判断上传的文件是否为空
@@ -75,7 +74,7 @@ public class FileUploadController {
                         Statement statement = conn.createStatement();
                         statement.executeUpdate("update user set pic='../images/profilePic/"+trueFileName+"' where id='"+userId+"'"); //TODO
                         result.put("uploadStatus", "success");
-                        return result;
+//                        return result;
                     } catch (SQLException e) {
                         e.printStackTrace();
                     }
@@ -92,6 +91,7 @@ public class FileUploadController {
             return null;
         }
         result.put("uploadStatus", "failure");
-        return result;
+//        return result;
+        return "redirect:/loginpage";
     }
 }
